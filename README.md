@@ -4,7 +4,7 @@
 
 Компьютерная игра [Blitzkrieg](https://wikipedia.org/wiki/Blitzkrieg_(video_game)) это первая часть легендарной серии военных стратегий в реальном времени, разработанная [Nival Interactive](http://nival.com/) и выпущенная компанией 1С 28 марта 2003 года.
 
-Игра до сих пор доступна в [Steam]((https://store.steampowered.com/app/313480/Blitzkrieg_Anthology/)) и [GOG.com](https://www.gog.com/en/game/blitzkrieg_anthology).
+Игра до сих пор доступна в [Steam](https://store.steampowered.com/app/313480/Blitzkrieg_Anthology/) и [GOG.com](https://www.gog.com/en/game/blitzkrieg_anthology).
 
 В 2025 году исходный код одиночной игры был открыт под [специальной лицензией](LICENSE.md), запрещающей коммерческое использование, но полностью открытой для сообщества игры, образования и исследований. 
 Перед использованием внимательно ознакомьтесь с условиями [лицензионного соглашения](LICENSE.md).
