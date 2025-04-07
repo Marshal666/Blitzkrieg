@@ -1,0 +1,2752 @@
+<?xml version="1.0"?>
+<!-- edited with XML Spy v3.5 NT (http://www.xmlspy.com) by Alexxx (Nival Int.) -->
+<base Season="0" MissionIndex="-1">
+	<Terrain>
+		<tileset>terrain\sets\1\tileset</tileset>
+		<crosset>terrain\sets\1\crosset</crosset>
+		<roadset>terrain\sets\1\roadset</roadset>
+		<noise>terrain\sets\1\noise</noise>
+		<patches>
+			<item size_x="3" size_y="3"/>
+			<item start_x="0" start_y="0">
+				<BaseCrosses/>
+				<LayerCrosses/>
+				<NoiseCrosses/>
+				<roads0/>
+				<roads1/>
+				<roads2/>
+				<roads3/>
+			</item>
+			<item start_x="16" start_y="0">
+				<BaseCrosses/>
+				<LayerCrosses/>
+				<NoiseCrosses/>
+				<roads0/>
+				<roads1/>
+				<roads2/>
+				<roads3/>
+			</item>
+			<item start_x="32" start_y="0">
+				<BaseCrosses/>
+				<LayerCrosses/>
+				<NoiseCrosses/>
+				<roads0/>
+				<roads1/>
+				<roads2/>
+				<roads3/>
+			</item>
+			<item start_x="0" start_y="16">
+				<BaseCrosses/>
+				<LayerCrosses/>
+				<NoiseCrosses/>
+				<roads0/>
+				<roads1/>
+				<roads2/>
+				<roads3/>
+			</item>
+			<item start_x="16" start_y="16">
+				<BaseCrosses/>
+				<LayerCrosses/>
+				<NoiseCrosses/>
+				<roads0/>
+				<roads1/>
+				<roads2/>
+				<roads3/>
+			</item>
+			<item start_x="32" start_y="16">
+				<BaseCrosses/>
+				<LayerCrosses/>
+				<NoiseCrosses/>
+				<roads0/>
+				<roads1/>
+				<roads2/>
+				<roads3/>
+			</item>
+			<item start_x="0" start_y="32">
+				<BaseCrosses/>
+				<LayerCrosses/>
+				<NoiseCrosses/>
+				<roads0/>
+				<roads1/>
+				<roads2/>
+				<roads3/>
+			</item>
+			<item start_x="16" start_y="32">
+				<BaseCrosses/>
+				<LayerCrosses/>
+				<NoiseCrosses/>
+				<roads0/>
+				<roads1/>
+				<roads2/>
+				<roads3/>
+			</item>
+			<item start_x="32" start_y="32">
+				<BaseCrosses/>
+				<LayerCrosses/>
+				<NoiseCrosses/>
+				<roads0/>
+				<roads1/>
+				<roads2/>
+				<roads3/>
+			</item>
+		</patches>
+		<tiles>
+			<item size_x="48" size_y="48"/>
+			<item>D300D600D300D200D400D300D500D800D200D700D200D300D900D800D400D600D300D200D300D900D800D300D500D300D600D800D600D600D700D700D300D300D400D600D400D200D500D700D300D400D500D300D900D900D500D500D500D400</item>
+			<item>D800D500D900D400D600D200D300D200D900D700D700D500D900D300D700D300D400D200D700D800D200D600D400D300D600D400D300D500D700D400D900D900D400D200D900D200D400D800D300D300D200D900D400D900D600D700D400D200</item>
+			<item>D700D800D900D200D200D900D800D200D200D500D300D900D200D300D500D200D400D800D600D800D600D800D400D200D800D600D900D500D300D800D400D400D500D200D300D500D900D600D500D200D800D500D400D500D500D400D900D900</item>
+			<item>D900D500D800D700D600D300D500D400D800D300D600D200D200D800D400D600D500D900D700D900D700D800D400D200D400D300D500D600D300D300D600D400D200D600D700D300D500D200D400D400D200D300D200D300D300D600D900D200</item>
+			<item>D300D600D200D200D400D800D400D600D900D800D500D600D400D200D500D700D900D300D600D900D200D700D300D600D800D300D500D400D300D700D500D300D800D400D400D200D800D800D200D800D200D200D900D900D600D900D500D800</item>
+			<item>D700D600D700D200D300D400D200D200D800D200D900D300D300D400D600D600D400D200D500D200D600D600D900D200D700D300D500D800D300D800D300D900D400D600D500D900D300D400D700D200D200D600D800D800D500D900D200D500</item>
+			<item>D800D500D400D500D200D900D800D200D300D700D700D700D700D700D400D800D500D200D900D900D400D200D400D200D300D600D300D300D600D300D400D300D700D700D400D800D800D400D300D600D200D900D600D900D700D900D800D700</item>
+			<item>D400D600D500D300D800D400D500D600D500D600D400D300D300D900D300D600D400D200D400D500D300D300D900D500D300D500D500D600D200D200D900D700D600D900D800D500D600D900D400D800D200D900D700D900D200D600D200D700</item>
+			<item>D700D500D300D200D300D800D500D300D600D900D800D900D200D800D400D700D300D200D900D900D300D200D400D400D200D400D300D200D300D800D700D900D700D200D700D200D700D800D800D200D300D200D900D500D300D700D300D700</item>
+			<item>D200D800D300D200D400D200D900D200D600D900D500D800D900D700D600D200D200D800D500D900D700D300D300D300D300D900D300D600D200D400D400D300D900D700D400D800D700D500D200D400D500D700D500D300D500D800D600D600</item>
+			<item>D300D900D400D700D300D700D500D700D800D400D900D500D600D900D800D300D400D500D200D200D200D300D400D900D800D200D800D700D200D500D200D500D300D900D400D300D700D400D600D700D600D200D800D200D700D300D600D400</item>
+			<item>D200D500D300D600D800D200D600D700D200D400D400D300D200D400D200D300D800D300D800D400D600D300D200D400D900D600D700D400D700D800D800D600D600D900D500D500D600D700D600D700D500D200D300D800D200D900D300D900</item>
+			<item>D600D200D200D700D700D600D600D900D400D400D700D800D600D700D400D300D900D500D700D800D300D900D800D200D400D400D900D400D900D900D800D900D300D500D600D500D200D300D900D900D300D200D300D800D500D200D500D300</item>
+			<item>D700D600D200D500D400D900D900D900D700D300D300D900D800D500D900D300D900D300D400D600D700D700D900D700D900D800D700D200D200D800D800D900D800D200D200D600D500D500D200D800D600D600D900D600D300D200D400D900</item>
+			<item>D400D500D400D700D800D900D200D200D600D900D300D600D700D800D900D200D800D300D500D200D300D500D900D400D900D400D400D300D700D800D500D900D700D800D300D500D900D600D700D500D200D200D900D500D500D900D300D400</item>
+			<item>D500D900D600D700D900D500D300D900D700D800D200D400D300D400D400D600D800D800D900D600D900D500D300D900D300D600D600D200D500D700D500D200D700D800D300D500D600D900D600D900D600D500D800D600D900D900D400D700</item>
+			<item>D200D300D400D800D600D700D300D400D900D200D900D700D600D500D400D600D700D700D600D200D700D800D700D500D400D700D900D300D900D300D700D500D200D300D400D200D400D200D800D700D400D200D700D300D900D900D200D300</item>
+			<item>D600D300D200D500D300D700D800D200D700D600D700D900D500D700D700D400D800D900D900D800D700D300D700D400D700D500D900D900D300D700D600D300D400D900D900D300D200D900D700D200D500D600D600D600D500D300D600D300</item>
+			<item>D800D200D900D800D600D300D700D600D200D800D200D300D900D800D400D600D200D900D700D200D900D300D800D700D800D500D400D400D500D300D800D600D700D300D300D300D900D200D700D700D400D300D800D200D300D900D300D600</item>
+			<item>D900D700D500D800D600D800D900D400D600D800D800D500D800D600D400D600D600D300D700D500D400D800D500D900D900D900D800D700D300D600D500D900D900D400D500D500D800D700D600D800D900D300D800D800D900D800D800D200</item>
+			<item>D500D500D700D300D300D400D900D500D800D300D700D700D800D200D200D500D700D600D500D300D800D200D200D800D900D300D700D600D500D200D300D900D900D200D600D600D300D600D900D600D200D200D300D800D500D300D400D600</item>
+			<item>D500D900D700D800D300D200D400D200D300D500D200D400D200D300D300D800D600D900D800D300D700D200D300D300D700D800D600D200D500D200D300D600D600D600D400D700D600D600D400D700D700D700D900D600D300D300D900D300</item>
+			<item>D800D700D200D200D900D600D900D300D500D500D700D600D600D500D500D600D900D500D200D800D400D700D800D900D600D400D600D800D500D800D800D200D300D600D600D700D700D800D800D300D300D400D700D500D400D600D600D900</item>
+			<item>D400D300D200D400D500D800D900D200D200D600D700D500D300D400D200D200D600D300D900D500D200D900D700D300D500D300D600D700D900D800D200D600D300D300D300D900D300D200D600D600D700D200D300D200D500D700D500D800</item>
+			<item>D700D800D700D300D600D200D600D600D200D600D800D500D400D200D300D900D700D500D300D200D900D700D600D800D600D900D500D800D600D900D300D500D800D700D500D400D200D800D500D900D200D200D900D200D400D800D200D700</item>
+			<item>D700D600D400D900D300D400D500D600D400D300D400D900D300D600D400D500D700D900D400D300D300D900D200D900D900D400D400D400D200D400D900D200D200D500D900D300D200D700D200D200D200D900D900D200D600D800D400D800</item>
+			<item>D300D400D700D600D900D300D700D500D900D900D400D300D900D200D400D400D500D400D800D300D400D400D500D900D400D900D300D200D400D600D400D300D400D700D200D700D200D800D300D400D400D900D600D400D200D200D700D200</item>
+			<item>D200D900D400D300D500D900D200D800D300D700D400D500D300D800D700D800D400D400D800D700D900D300D200D800D200D400D600D800D600D900D400D700D700D900D400D600D300D200D800D200D900D900D800D700D200D800D800D400</item>
+			<item>D900D300D200D500D400D200D700D300D700D600D600D900D900D600D800D800D600D800D700D200D300D800D700D300D300D300D800D400D400D500D500D900D300D600D500D500D700D300D200D700D400D800D600D300D500D200D400D600</item>
+			<item>D600D700D400D800D500D800D600D900D900D400D500D200D500D600D200D800D200D700D600D900D500D500D400D700D800D200D500D400D300D400D800D300D600D300D200D500D800D200D500D300D600D300D200D900D700D400D900D300</item>
+			<item>D200D400D700D700D600D200D300D400D500D500D300D300D400D300D300D600D700D500D500D600D300D400D700D300D400D300D400D500D500D300D700D200D800D700D300D600D900D700D900D900D900D500D300D400D200D800D600D700</item>
+			<item>D900D200D900D600D900D800D700D400D700D300D600D500D700D900D900D500D500D900D700D700D200D700D300D200D400D800D300D200D300D500D300D600D200D200D900D400D400D400D300D200D700D400D400D800D500D700D700D200</item>
+			<item>D700D800D400D700D800D600D300D900D900D400D900D800D700D800D200D300D700D600D500D500D400D200D700D400D800D600D800D200D200D400D800D600D400D300D200D300D600D800D500D500D200D200D300D300D400D700D300D700</item>
+			<item>D900D900D600D500D700D300D300D800D700D500D800D200D900D800D200D700D300D900D300D800D800D200D400D700D300D500D700D600D600D200D200D300D200D200D800D200D300D400D600D300D500D300D800D200D500D900D200D800</item>
+			<item>D200D500D800D400D900D800D300D800D700D900D200D500D500D200D400D500D400D800D400D200D600D900D200D300D700D900D300D300D400D300D700D900D200D200D300D300D300D800D200D700D400D600D300D500D700D600D200D900</item>
+			<item>D800D200D200D800D600D700D300D300D400D300D700D500D800D500D500D600D300D600D900D500D900D200D500D600D200D300D700D900D500D900D200D200D800D800D300D200D500D300D700D200D900D500D300D500D400D200D200D500</item>
+			<item>D800D900D400D500D400D200D600D800D900D800D900D400D400D200D200D400D300D400D200D600D900D500D300D200D900D200D800D800D300D600D400D700D600D400D600D200D800D900D500D200D700D300D800D300D700D700D800D900</item>
+			<item>D800D900D400D400D400D900D300D500D500D200D400D400D400D700D300D200D400D600D600D800D600D300D800D600D300D700D800D200D900D400D300D600D500D500D400D500D700D700D400D700D900D200D600D400D900D200D900D300</item>
+			<item>D800D900D300D300D400D200D800D700D700D400D400D400D200D900D500D200D300D200D600D400D600D700D400D300D700D800D500D400D400D400D700D400D800D800D700D900D700D700D500D700D400D200D400D700D500D600D900D700</item>
+			<item>D600D400D700D800D500D700D600D900D800D900D900D400D900D200D500D700D500D200D300D500D400D900D200D900D500D500D700D500D200D500D900D300D800D300D800D900D800D800D700D500D700D200D200D200D900D200D400D900</item>
+			<item>D900D500D600D200D300D600D700D500D600D900D500D900D300D500D700D600D300D200D900D200D200D900D200D200D900D400D400D500D400D300D600D600D400D900D500D300D200D400D800D200D300D300D400D300D400D400D700D500</item>
+			<item>D800D700D200D300D300D600D900D500D600D600D300D200D500D900D400D600D600D200D300D700D400D500D500D300D400D200D900D500D600D400D300D700D300D800D400D400D900D200D300D500D800D400D500D800D200D200D600D400</item>
+			<item>D600D500D500D500D400D800D600D500D500D900D200D900D700D700D400D400D400D200D800D800D200D700D200D900D700D700D800D300D900D800D700D400D600D400D300D300D300D600D600D200D600D300D500D500D600D200D400D900</item>
+			<item>D300D700D400D200D600D300D700D200D900D200D400D900D800D200D600D700D300D600D800D900D400D900D700D700D500D400D900D700D500D300D200D900D200D600D200D500D900D500D900D800D900D600D500D900D600D600D800D400</item>
+			<item>D200D700D800D200D200D500D200D600D500D300D300D600D500D300D500D400D200D200D200D400D800D500D700D200D500D400D600D500D800D600D200D700D900D300D200D200D900D200D400D300D300D200D700D400D900D500D300D900</item>
+			<item>D600D200D700D700D800D700D700D300D200D200D200D200D300D300D800D300D500D800D400D600D200D300D900D800D700D900D400D200D800D200D500D200D400D400D800D800D200D200D900D400D300D300D800D600D300D600D600D400</item>
+			<item>D900D400D200D700D900D400D900D200D500D300D600D300D300D200D300D300D900D800D500D200D400D400D800D800D500D500D700D500D500D600D200D400D900D700D300D700D600D400D300D400D700D300D200D400D700D300D800D200</item>
+			<item>D300D900D700D500D900D600D400D200D300D300D200D500D500D200D800D300D400D200D300D300D500D600D200D900D300D200D300D500D900D400D300D600D200D700D900D200D700D500D400D700D800D300D900D300D300D800D300D600</item>
+		</tiles>
+		<vector_roads/>
+		<Rivers/>
+		<Roads/>
+		<Altitudes>
+			<item size_x="49" size_y="49"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+			<item Height="0" Shade="208"/>
+		</Altitudes>
+	</Terrain>
+	<Objects>
+		<item Direction="57342" Player="0" ScriptID="-1" HP="1" FrameIndex="-1">
+			<Name>T-70</Name>
+			<Position x="857.013" y="1704.13" z="0"/>
+			<Link LinkID="6" Intention="0" LinkWith="0"/>
+		</item>
+		<item Direction="57342" Player="0" ScriptID="-1" HP="1" FrameIndex="-1">
+			<Name>T-70</Name>
+			<Position x="1069.85" y="2228.09" z="0"/>
+			<Link LinkID="3" Intention="0" LinkWith="0"/>
+		</item>
+		<item Direction="57342" Player="0" ScriptID="-1" HP="1" FrameIndex="-1">
+			<Name>Studebaker_Engineering</Name>
+			<Position x="1581.09" y="1781.2" z="0"/>
+			<Link LinkID="2" Intention="0" LinkWith="0"/>
+		</item>
+		<item Direction="57342" Player="0" ScriptID="-1" HP="1" FrameIndex="-1">
+			<Name>Studebaker_Engineering</Name>
+			<Position x="1453.1" y="895.197" z="0"/>
+			<Link LinkID="4" Intention="0" LinkWith="0"/>
+		</item>
+		<item Direction="57342" Player="0" ScriptID="-1" HP="1" FrameIndex="-1">
+			<Name>T-70</Name>
+			<Position x="864.084" y="1383.1" z="0"/>
+			<Link LinkID="1" Intention="0" LinkWith="0"/>
+		</item>
+		<item Direction="57342" Player="0" ScriptID="-1" HP="1" FrameIndex="-1">
+			<Name>Studebaker_Engineering</Name>
+			<Position x="1574.02" y="1337.14" z="0"/>
+			<Link LinkID="5" Intention="0" LinkWith="0"/>
+		</item>
+	</Objects>
+	<Entrenchments/>
+	<Bridges/>
+	<ReinforcementGroup>
+		<Reinforcements/>
+	</ReinforcementGroup>
+	<Scripts>maps\test\test\avia\ussr\plane_bomb</Scripts>
+	<ScriptAreas/>
+	<CameraAnchor x="0" y="0" z="0"/>
+	<SeasonFolder>terrain\sets\1\</SeasonFolder>
+	<Diplomacies/>
+	<ReservePositions/>
+	<UnitCreations>
+		<Units>
+			<item>
+				<Aviation RelaxTime="1">
+					<Aircrafts>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+					</Aircrafts>
+					<ParadropSoldierName>USSR_rpd_43</ParadropSoldierName>
+					<AppearPoints>
+						<item x="0" y="0" z="0"/>
+					</AppearPoints>
+				</Aviation>
+				<Mines>
+					<AntiPersonnel>Mine_APers</AntiPersonnel>
+					<AntiTank>Mine_AT</AntiTank>
+				</Mines>
+				<ArtilleryCrew>USSR_gunner</ArtilleryCrew>
+				<Engineers>USSR_reload</Engineers>
+				<TempRUStorages>
+					<item>Tent_02</item>
+				</TempRUStorages>
+				<AntiTankObjects>
+					<item>Antitank01</item>
+				</AntiTankObjects>
+			</item>
+			<item>
+				<Aviation RelaxTime="1">
+					<Aircrafts>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Pe_8</Name>
+						</item>
+					</Aircrafts>
+					<ParadropSoldierName>USSR_rpd_43</ParadropSoldierName>
+					<AppearPoints>
+						<item x="0" y="0" z="0"/>
+					</AppearPoints>
+				</Aviation>
+				<Mines>
+					<AntiPersonnel>Mine_APers</AntiPersonnel>
+					<AntiTank>Mine_AT</AntiTank>
+				</Mines>
+				<ArtilleryCrew>USSR_gunner</ArtilleryCrew>
+				<Engineers>USSR_reload</Engineers>
+				<TempRUStorages>
+					<item>Tent_02</item>
+				</TempRUStorages>
+				<AntiTankObjects>
+					<item>Antitank01</item>
+				</AntiTankObjects>
+			</item>
+			<item>
+				<Aviation RelaxTime="1">
+					<Aircrafts>
+						<item FormationSize="1">
+							<Name>Po_2</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Yak-7</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Tb-3</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Tb-3</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>IL_2</Name>
+						</item>
+					</Aircrafts>
+					<ParadropSoldierName>USSR_rpd_43</ParadropSoldierName>
+					<AppearPoints>
+						<item x="0" y="0" z="0"/>
+					</AppearPoints>
+				</Aviation>
+				<Mines>
+					<AntiPersonnel>Mine_APers</AntiPersonnel>
+					<AntiTank>Mine_AT</AntiTank>
+				</Mines>
+				<ArtilleryCrew>USSR_gunner</ArtilleryCrew>
+				<Engineers>USSR_reload</Engineers>
+				<TempRUStorages>
+					<item>Tent_02</item>
+				</TempRUStorages>
+				<AntiTankObjects>
+					<item>Antitank01</item>
+				</AntiTankObjects>
+			</item>
+			<item>
+				<Aviation RelaxTime="1">
+					<Aircrafts>
+						<item FormationSize="1">
+							<Name>Po_2</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Yak-7</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Tb-3</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>Tb-3</Name>
+						</item>
+						<item FormationSize="1">
+							<Name>IL_2</Name>
+						</item>
+					</Aircrafts>
+					<ParadropSoldierName>USSR_rpd_43</ParadropSoldierName>
+					<AppearPoints>
+						<item x="0" y="0" z="0"/>
+					</AppearPoints>
+				</Aviation>
+				<Mines>
+					<AntiPersonnel>Mine_APers</AntiPersonnel>
+					<AntiTank>Mine_AT</AntiTank>
+				</Mines>
+				<ArtilleryCrew>USSR_gunner</ArtilleryCrew>
+				<Engineers>USSR_reload</Engineers>
+				<TempRUStorages>
+					<item>Tent_02</item>
+				</TempRUStorages>
+				<AntiTankObjects>
+					<item>Antitank01</item>
+				</AntiTankObjects>
+			</item>
+		</Units>
+	</UnitCreations>
+	<StartCommands/>
+	<ChapterName/>
+	<MapSounds>
+		<Sounds/>
+	</MapSounds>
+</base>
