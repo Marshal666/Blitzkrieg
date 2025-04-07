@@ -1,0 +1,419 @@
+#ifndef __TREEITEM_H__
+#define __TREEITEM_H__
+
+#include <TrCtlX.h>
+#include "CtrlObjectInspector.h"
+
+using namespace std;
+typedef vector<string> CVectorOfStrings;
+
+struct SProp
+{
+	int nId;									// для каждого элемента свойств в OI нужен уникальный id, используется чтобы узнать какой элемент был модифицирован в OI
+	string szDefaultName;			// имя по умолчанию, по этим именам осуществляется сортировка в дереве и создание элементов по умолчанию
+	string szDisplayName;			// имя, отображаемое на экране
+	DomenID nDomenType;				// тип значения
+	CVariant value;						// значение
+	vector<string> szStrings; // опции в комбобоксе для типа DT_COMBO
+														// для DT_BROWSE первый элемент вектора - начальная директория, второй элемент - фильтр
+	//
+	int operator&( IDataTree &ss );
+};
+typedef vector<SProp> CPropVector;
+
+
+enum ETreeItemType
+{
+	//Note, эти ID нельзя изменять или не будут работать старые saves
+	
+	E_UNKNOWN_ITEM	= 0,
+	EDITOR_TREE_BASE_VALUE				= 0x11000000,
+	E_ANIMATION_ROOT_ITEM					= EDITOR_TREE_BASE_VALUE + 1,		//ROOT item для Animation дерева
+	E_UNIT_COMMON_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 2,
+	E_LOCALIZATION_ITEM						= EDITOR_TREE_BASE_VALUE + 3,
+	E_UNIT_AI_PROPS_ITEM					= EDITOR_TREE_BASE_VALUE + 4,
+	E_UNIT_WEAPON_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 5,
+	E_UNIT_GRENADE_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 6,
+	E_UNIT_DIRECTORY_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 7,
+	E_UNIT_SEASON_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 8,
+	E_UNIT_DIRECTORIES_ITEM				= EDITOR_TREE_BASE_VALUE + 9,
+	E_UNIT_ANIMATIONS_ITEM				= EDITOR_TREE_BASE_VALUE + 10,
+	E_UNIT_ANIMATION_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 11,
+	E_UNIT_FRAME_PROPS_ITEM				=	EDITOR_TREE_BASE_VALUE + 12,
+	E_UNIT_ACTIONS_ITEM						= EDITOR_TREE_BASE_VALUE + 13,
+	E_UNIT_ACTION_PROPS_ITEM			=	EDITOR_TREE_BASE_VALUE + 14,
+	E_UNIT_EXPOSURES_ITEM					= EDITOR_TREE_BASE_VALUE + 15,
+	E_UNIT_ACKS_ITEM							= EDITOR_TREE_BASE_VALUE + 16,
+	E_UNIT_ACK_TYPES_ITEM					= EDITOR_TREE_BASE_VALUE + 17,
+	E_UNIT_ACK_TYPE_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 18,
+	
+	E_SPRITE_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 21,	//ROOT item для Sprites дерева
+	E_SPRITES_ITEM								= EDITOR_TREE_BASE_VALUE + 22,
+	E_SPRITE_PROPS_ITEM						= EDITOR_TREE_BASE_VALUE + 23,
+	
+	E_EFFECT_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 31,	//ROOT item для effect composer
+	E_EFFECT_COMMON_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 32,
+	E_EFFECT_ANIMATIONS_ITEM			= EDITOR_TREE_BASE_VALUE + 33,
+	E_EFFECT_MESHES_ITEM					= EDITOR_TREE_BASE_VALUE + 34,
+	E_EFFECT_FUNC_PARTICLES_ITEM	= EDITOR_TREE_BASE_VALUE + 35,
+	E_EFFECT_MAYA_PARTICLES_ITEM	= EDITOR_TREE_BASE_VALUE + 36,
+	E_EFFECT_LIGHTS_ITEM					= EDITOR_TREE_BASE_VALUE + 37,
+	E_EFFECT_ANIMATION_PROPS_ITEM = EDITOR_TREE_BASE_VALUE + 38,
+	E_EFFECT_MESH_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 39,
+	E_EFFECT_FUNC_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 40,
+	E_EFFECT_MAYA_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 41,
+	
+	E_OBJECT_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 51,	//ROOT item для object composer
+	E_OBJECT_COMMON_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 52,
+	E_OBJECT_GRAPHICS_ITEM				= EDITOR_TREE_BASE_VALUE + 53,
+	E_OBJECT_SPRITE_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 54,
+	E_OBJECT_SHADOW_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 55,
+	E_OBJECT_PARTICLES_ITEM				= EDITOR_TREE_BASE_VALUE + 56,
+	E_OBJECT_PASSES_ITEM					= EDITOR_TREE_BASE_VALUE + 57,
+	E_OBJECT_PASS_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 58,
+	
+	E_MESH_ROOT_ITEM							= EDITOR_TREE_BASE_VALUE + 61,	//ROOT item для mesh composer
+	E_MESH_COMMON_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 62,
+	E_MESH_DEFENCES_ITEM					= EDITOR_TREE_BASE_VALUE + 63,
+	E_MESH_DEFENCE_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 64,
+	E_MESH_GRAPHICS_ITEM					= EDITOR_TREE_BASE_VALUE + 65,
+	E_MESH_PROPS_ITEM							= EDITOR_TREE_BASE_VALUE + 66,
+	E_MESH_PLATFORMS_ITEM					= EDITOR_TREE_BASE_VALUE + 71,
+	E_MESH_PLATFORM_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 72,
+	E_MESH_GUNS_ITEM							= EDITOR_TREE_BASE_VALUE + 73,
+	E_MESH_GUN_PROPS_ITEM					= EDITOR_TREE_BASE_VALUE + 74,
+	E_MESH_JOGGINGS_ITEM					= EDITOR_TREE_BASE_VALUE + 75,
+	E_MESH_JOGGING_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 76,
+	E_MESH_LOCATORS_ITEM					= EDITOR_TREE_BASE_VALUE + 77,
+	E_MESH_LOCATOR_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 78,
+	E_MESH_AVIA_ITEM							= EDITOR_TREE_BASE_VALUE + 79,
+	E_MESH_SOUND_PROPS_ITEM				= EDITOR_TREE_BASE_VALUE + 80,
+	E_MESH_EFFECTS_ITEM						= EDITOR_TREE_BASE_VALUE + 67,
+	E_MESH_DEATH_CRATERS_ITEM			= EDITOR_TREE_BASE_VALUE + 68,
+	E_MESH_DEATH_CRATER_PROPS_ITEM= EDITOR_TREE_BASE_VALUE + 69,
+	E_MESH_TRACK_ITEM							= EDITOR_TREE_BASE_VALUE + 70,
+	
+	E_WEAPON_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 81,	//ROOT item для weapon composer
+	E_WEAPON_COMMON_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 82,
+	E_WEAPON_SHOOT_TYPES_ITEM			= EDITOR_TREE_BASE_VALUE + 83,
+	E_WEAPON_DAMAGE_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 84,
+	E_WEAPON_SOUND_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 85,
+	E_WEAPON_EFFECTS_ITEM					= EDITOR_TREE_BASE_VALUE + 86,
+	E_WEAPON_EFFECT_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 87,
+	E_WEAPON_FLASH_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 88,
+	
+	//89 занято, см выше
+	E_BUILDING_ROOT_ITEM					= EDITOR_TREE_BASE_VALUE + 91,	//ROOT item для building composer
+	E_BUILDING_DEFENCES_ITEM			= EDITOR_TREE_BASE_VALUE + 89,
+	E_BUILDING_DEFENCE_PROPS_ITEM	= EDITOR_TREE_BASE_VALUE + 90,
+	E_BUILDING_COMMON_PROPS_ITEM	= EDITOR_TREE_BASE_VALUE + 92,
+	E_BUILDING_ENTRANCES_ITEM 		= EDITOR_TREE_BASE_VALUE + 93,
+	E_BUILDING_ENTRANCE_PROPS_ITEM= EDITOR_TREE_BASE_VALUE + 94,
+	E_BUILDING_SLOTS_ITEM					= EDITOR_TREE_BASE_VALUE + 95,
+	E_BUILDING_SLOT_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 96,
+	E_BUILDING_GRAPHICS_ITEM			= EDITOR_TREE_BASE_VALUE + 97,
+	E_BUILDING_GRAPHIC1_PROPS_ITEM = EDITOR_TREE_BASE_VALUE + 98,
+	E_BUILDING_GRAPHIC2_PROPS_ITEM = EDITOR_TREE_BASE_VALUE + 99,
+	E_BUILDING_GRAPHIC3_PROPS_ITEM = EDITOR_TREE_BASE_VALUE + 100,
+	
+	E_TILESET_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 101,	//ROOT item для TileSet composer
+	E_TILESET_COMMON_PROPS_ITEM 	= EDITOR_TREE_BASE_VALUE + 102,
+	E_TILESET_TERRAINS_ITEM			 	= EDITOR_TREE_BASE_VALUE + 103,
+	E_TILESET_TERRAIN_PROPS_ITEM 	= EDITOR_TREE_BASE_VALUE + 104,
+	E_TILESET_TILE_PROPS_ITEM 		= EDITOR_TREE_BASE_VALUE + 105,
+	E_CROSSETS_ITEM								= EDITOR_TREE_BASE_VALUE + 106,
+	E_CROSSET_PROPS_ITEM					= EDITOR_TREE_BASE_VALUE + 107,
+	E_CROSSET_TILES_ITEM					= EDITOR_TREE_BASE_VALUE + 108,
+	E_CROSSET_TILE_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 109,
+
+	E_FENCE_ROOT_ITEM							= EDITOR_TREE_BASE_VALUE + 121,	//ROOT item для Fence composer
+	E_FENCE_COMMON_PROPS_ITEM 		= EDITOR_TREE_BASE_VALUE + 122,
+	E_FENCE_DIRECTION_ITEM				= EDITOR_TREE_BASE_VALUE + 123,
+	E_FENCE_INSERT_ITEM						= EDITOR_TREE_BASE_VALUE + 124,
+	E_FENCE_PROPS_ITEM						= EDITOR_TREE_BASE_VALUE + 125,
+	
+	E_KEYFRAME_TREE_ITEM					= EDITOR_TREE_BASE_VALUE + 130,	//Специальный TreeItem который будет отображаться как в OI так и в KeyFrame
+	E_PARTICLE_ROOT_ITEM					= EDITOR_TREE_BASE_VALUE + 131,	//ROOT item для Particle Frame
+	E_PARTICLE_COMMON_PROPS_ITEM	= EDITOR_TREE_BASE_VALUE + 132,
+	E_PARTICLE_SOURCE_PROP_ITEMS	= EDITOR_TREE_BASE_VALUE + 133,
+	E_PARTICLE_GENERATE_SPIN_ITEM			= EDITOR_TREE_BASE_VALUE + 134,
+	E_PARTICLE_GENERATE_AREA_ITEM			= EDITOR_TREE_BASE_VALUE + 135,
+	E_PARTICLE_GENERATE_ANGLE_ITEM		= EDITOR_TREE_BASE_VALUE + 136,
+	E_PARTICLE_GENERATE_OPACITY_ITEM	= EDITOR_TREE_BASE_VALUE + 137,
+	E_PARTICLE_GENERATE_SPEED_ITEM		= EDITOR_TREE_BASE_VALUE + 138,
+	E_PARTICLE_GENERATE_LIFE_ITEM			= EDITOR_TREE_BASE_VALUE + 139,
+	E_PARTICLE_GENERATE_DENSITY_ITEM	= EDITOR_TREE_BASE_VALUE + 140,
+	
+	E_PARTICLE_PROP_ITEMS					= EDITOR_TREE_BASE_VALUE + 141,
+	E_PARTICLE_SPIN_ITEM					= EDITOR_TREE_BASE_VALUE + 142,
+	E_PARTICLE_WEIGHT_ITEM				= EDITOR_TREE_BASE_VALUE + 143,
+	E_PARTICLE_SPEED_ITEM					= EDITOR_TREE_BASE_VALUE + 144,
+	E_PARTICLE_SIZE_ITEM					= EDITOR_TREE_BASE_VALUE + 145,
+	E_PARTICLE_OPACITY_ITEM				= EDITOR_TREE_BASE_VALUE + 146,
+	E_PARTICLE_GENERATE_RANDOM_SPIN_ITEM = EDITOR_TREE_BASE_VALUE + 147,
+	E_PARTICLE_TEXTURE_FRAME_ITEM	= EDITOR_TREE_BASE_VALUE + 148,
+	E_PARTICLE_COMPLEX_SOURCE_ITEM= EDITOR_TREE_BASE_VALUE + 149,
+
+	E_TRENCH_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 151,	//ROOT item для Trench composer
+	E_TRENCH_COMMON_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 152,
+	E_TRENCH_SOURCES_ITEM					= EDITOR_TREE_BASE_VALUE + 153,
+	E_TRENCH_SOURCE_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 154,
+	E_TRENCH_DEFENCES_ITEM				= EDITOR_TREE_BASE_VALUE + 155,
+	E_TRENCH_DEFENCE_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 156,
+	
+	E_SQUAD_ROOT_ITEM							= EDITOR_TREE_BASE_VALUE + 161,	//ROOT item для Squad composer
+	E_SQUAD_COMMON_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 162,
+	E_SQUAD_MEMBERS_ITEM					= EDITOR_TREE_BASE_VALUE + 163,
+	E_SQUAD_MEMBER_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 164,
+	E_SQUAD_FORMATIONS_ITEM				= EDITOR_TREE_BASE_VALUE + 165,
+	E_SQUAD_FORMATION_PROPS_ITEM	= EDITOR_TREE_BASE_VALUE + 166,
+	
+	E_GUI_ROOT_ITEM								= EDITOR_TREE_BASE_VALUE + 171,	//ROOT item для GUI composer
+	E_GUI_MOUSE_SELECT_ITEM				= EDITOR_TREE_BASE_VALUE + 172,
+	E_TEMPLATE_TREE_ITEM					= EDITOR_TREE_BASE_VALUE + 173,
+	E_STATICS_TREE_ITEM						= EDITOR_TREE_BASE_VALUE + 174,
+	E_BUTTONS_TREE_ITEM						= EDITOR_TREE_BASE_VALUE + 175,
+	E_SLIDERS_TREE_ITEM						= EDITOR_TREE_BASE_VALUE + 176,
+	E_SCROLLBARS_TREE_ITEM				= EDITOR_TREE_BASE_VALUE + 177,
+	E_STATUSBARS_TREE_ITEM				= EDITOR_TREE_BASE_VALUE + 178,
+	E_LISTS_TREE_ITEM							= EDITOR_TREE_BASE_VALUE + 179,
+	E_DIALOGS_TREE_ITEM						= EDITOR_TREE_BASE_VALUE + 180,
+	E_UNKNOWNS_UI_TREE_ITEM				= EDITOR_TREE_BASE_VALUE + 181,
+
+	E_TEMPLATE_PROPS_TREE_ITEM		= EDITOR_TREE_BASE_VALUE + 191,
+	E_STATIC_PROPS_TREE_ITEM			= EDITOR_TREE_BASE_VALUE + 192,
+	E_BUTTON_PROPS_TREE_ITEM			= EDITOR_TREE_BASE_VALUE + 193,
+	E_SLIDER_PROPS_TREE_ITEM			= EDITOR_TREE_BASE_VALUE + 194,
+	E_SCROLLBAR_PROPS_TREE_ITEM		= EDITOR_TREE_BASE_VALUE + 195,
+	E_STATUSBAR_PROPS_TREE_ITEM		= EDITOR_TREE_BASE_VALUE + 196,
+	E_LIST_PROPS_TREE_ITEM				= EDITOR_TREE_BASE_VALUE + 197,
+	E_DIALOG_PROPS_TREE_ITEM			= EDITOR_TREE_BASE_VALUE + 198,
+	
+	E_MINE_ROOT_ITEM							= EDITOR_TREE_BASE_VALUE + 210,
+	E_MINE_COMMON_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 211,
+	
+	E_BRIDGE_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 220,	//ROOT item для Bridge composer
+	E_BRIDGE_COMMON_PROPS_ITEM 		= EDITOR_TREE_BASE_VALUE + 221,
+	E_BRIDGE_BEGIN_SPANS_ITEM			= EDITOR_TREE_BASE_VALUE + 222,
+	E_BRIDGE_CENTER_SPANS_ITEM		= EDITOR_TREE_BASE_VALUE + 223,
+	E_BRIDGE_END_SPANS_ITEM				= EDITOR_TREE_BASE_VALUE + 224,
+	E_BRIDGE_PARTS_ITEM						= EDITOR_TREE_BASE_VALUE + 225,
+	E_BRIDGE_PART_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 226,
+	E_BRIDGE_STAGE_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 227,
+	E_BRIDGE_DEFENCES_ITEM        = EDITOR_TREE_BASE_VALUE + 228,
+	E_BRIDGE_DEFENCE_PROPS_ITEM	  = EDITOR_TREE_BASE_VALUE + 229,
+
+	E_MISSION_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 230,	//ROOT item для Mission composer
+	E_MISSION_COMMON_PROPS_ITEM 	= EDITOR_TREE_BASE_VALUE + 231,
+	E_MISSION_OBJECTIVES_ITEM			= EDITOR_TREE_BASE_VALUE + 232,
+	E_MISSION_OBJECTIVE_PROPS_ITEM= EDITOR_TREE_BASE_VALUE + 233,
+	E_MISSION_MUSICS_ITEM					= EDITOR_TREE_BASE_VALUE + 234,
+	E_MISSION_MUSIC_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 235,
+	
+	E_CHAPTER_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 240,	//ROOT item для Chapter composer
+	E_CHAPTER_COMMON_PROPS_ITEM 	= EDITOR_TREE_BASE_VALUE + 241,
+	E_CHAPTER_MISSIONS_ITEM				= EDITOR_TREE_BASE_VALUE + 242,
+	E_CHAPTER_MISSION_PROPS_ITEM	= EDITOR_TREE_BASE_VALUE + 243,
+	E_CHAPTER_MUSICS_ITEM					= EDITOR_TREE_BASE_VALUE + 244,
+	E_CHAPTER_MUSIC_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 245,
+	E_CHAPTER_PLACES_ITEM					= EDITOR_TREE_BASE_VALUE + 246,
+	E_CHAPTER_PLACE_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 247,
+	
+	E_CAMPAIGN_ROOT_ITEM					= EDITOR_TREE_BASE_VALUE + 250,	//ROOT item для Chapter composer
+	E_CAMPAIGN_COMMON_PROPS_ITEM 	= EDITOR_TREE_BASE_VALUE + 251,
+	E_CAMPAIGN_CHAPTERS_ITEM			= EDITOR_TREE_BASE_VALUE + 252,
+	E_CAMPAIGN_CHAPTER_PROPS_ITEM	= EDITOR_TREE_BASE_VALUE + 253,
+	E_CAMPAIGN_TEMPLATES_ITEM			= EDITOR_TREE_BASE_VALUE + 254,
+	E_CAMPAIGN_TEMPLATE_PROPS_ITEM= EDITOR_TREE_BASE_VALUE + 255,
+	
+	//Дополнения для building, вверх не влезли
+	E_BUILDING_SUMMER_PROPS_ITEM 	= EDITOR_TREE_BASE_VALUE + 261,
+	E_BUILDING_WINTER_PROPS_ITEM 	= EDITOR_TREE_BASE_VALUE + 262,
+	E_BUILDING_GRAPHICW1_PROPS_ITEM = EDITOR_TREE_BASE_VALUE + 263,
+	E_BUILDING_GRAPHICW2_PROPS_ITEM = EDITOR_TREE_BASE_VALUE + 264,
+	E_BUILDING_GRAPHICW3_PROPS_ITEM = EDITOR_TREE_BASE_VALUE + 265,
+	E_BUILDING_PASSES_ITEM					= EDITOR_TREE_BASE_VALUE + 266,
+	E_BUILDING_PASS_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 267,
+	E_BUILDING_FIRE_POINTS_ITEM			= EDITOR_TREE_BASE_VALUE + 268,
+	E_BUILDING_FIRE_POINT_PROPS_ITEM= EDITOR_TREE_BASE_VALUE + 269,
+	E_BUILDING_DIR_EXPLOSIONS_ITEM	= EDITOR_TREE_BASE_VALUE + 270,
+	E_BUILDING_DIR_EXPLOSION_PROPS_ITEM	= EDITOR_TREE_BASE_VALUE + 271,
+	E_BUILDING_SMOKES_ITEM				= EDITOR_TREE_BASE_VALUE + 260,
+	E_BUILDING_SMOKE_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 272,
+	
+	//Дополнения для objects, вверх не влезли
+	E_OBJECT_GRAPHIC1_PROPS_ITEM	= EDITOR_TREE_BASE_VALUE + 273,
+	E_OBJECT_GRAPHICW1_PROPS_ITEM = EDITOR_TREE_BASE_VALUE + 274,
+	E_OBJECT_EFFECTS_ITEM					= EDITOR_TREE_BASE_VALUE + 275,
+	E_OBJECT_GRAPHICA1_PROPS_ITEM = EDITOR_TREE_BASE_VALUE + 276,
+
+	//Дополнения для weapons, вверх не влезли
+	E_WEAPON_CRATERS_ITEM					= EDITOR_TREE_BASE_VALUE + 281,
+	E_WEAPON_CRATER_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 282,
+
+	E_3DROAD_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 290,	//ROOT item для 3dRoad composer
+	E_3DROAD_COMMON_PROPS_ITEM 		= EDITOR_TREE_BASE_VALUE + 291,
+	E_3DROAD_LAYER_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 292,
+	
+	E_3DRIVER_ROOT_ITEM						= EDITOR_TREE_BASE_VALUE + 300,	//ROOT item для 3dRiver composer
+	E_3DRIVER_LAYER_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 301,
+	E_3DRIVER_BOTTOM_LAYER_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 302,
+	E_3DRIVER_LAYERS_ITEM					= EDITOR_TREE_BASE_VALUE + 303,
+	
+	E_MEDAL_ROOT_ITEM							= EDITOR_TREE_BASE_VALUE + 310,	//ROOT item для Medal composer
+	E_MEDAL_COMMON_PROPS_ITEM			= EDITOR_TREE_BASE_VALUE + 311,
+	E_MEDAL_PICTURE_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 312,
+	E_MEDAL_TEXT_PROPS_ITEM				= EDITOR_TREE_BASE_VALUE + 313,
+	
+	//Дополнения для TileSet composer, вврерх не влезают
+	E_TILESET_TILES_ITEM					= EDITOR_TREE_BASE_VALUE + 320,
+	E_TILESET_LSOUNDS_ITEM				= EDITOR_TREE_BASE_VALUE + 321,
+	E_TILESET_ASOUNDS_ITEM				= EDITOR_TREE_BASE_VALUE + 322,
+	E_TILESET_LSOUND_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 323,
+	E_TILESET_ASOUND_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 324,
+	
+	//Дополнения для Bridge composer, вврерх не влезают
+	E_BRIDGE_FIRE_POINTS_ITEM					= EDITOR_TREE_BASE_VALUE + 330,
+	E_BRIDGE_FIRE_POINT_PROPS_ITEM		= EDITOR_TREE_BASE_VALUE + 331,
+	E_BRIDGE_DIR_EXPLOSIONS_ITEM			= EDITOR_TREE_BASE_VALUE + 332,
+	E_BRIDGE_DIR_EXPLOSION_PROPS_ITEM	= EDITOR_TREE_BASE_VALUE + 333,
+	E_BRIDGE_SMOKES_ITEM							= EDITOR_TREE_BASE_VALUE + 334,
+	E_BRIDGE_SMOKE_PROPS_ITEM					= EDITOR_TREE_BASE_VALUE + 335,
+
+	//Дополнения для Particle composer, вврерх не влезают
+	E_PARTICLE_RAND_LIFE_ITEM			= EDITOR_TREE_BASE_VALUE + 340,
+	E_PARTICLE_RAND_SPEED_ITEM		= EDITOR_TREE_BASE_VALUE + 341,
+	E_PARTICLE_COMPLEX_ITEM				= EDITOR_TREE_BASE_VALUE + 342,
+	E_PARTICLE_C_RANDOM_SPEED_ITEM= EDITOR_TREE_BASE_VALUE + 343,
+
+	EDITOR_TREE_FORCE_DWORD = 0x7fffffff
+};
+
+/*
+bool IsCompatibleItems( CTreeItem *pFirst, CTreeItem *pSecond );
+bool CopyItemValues( CTreeItem *pFrom, CTreeItem *pTo );
+*/
+
+
+class CTreeItem : public IRefCount
+{
+	DECLARE_SERIALIZE;
+	OBJECT_NORMAL_METHODS( CTreeItem );
+
+public:
+	struct SChildItem
+	{
+		int nChildItemType;
+		string szDefaultName;
+		string szDisplayName;
+	};
+	typedef list <SChildItem> CChildItemsList;
+
+public:
+	typedef list< CPtr<CTreeItem> > CTreeItemList;
+protected:
+	bool bComplexItem;							// если сложный итем то не работает copy paste
+	bool bStaticElements;						// если стоит этот флаг то после загрузки дерева будут создаваться статические элементы из defaultChilds
+	bool bSerializeChilds;					// если не установлен флаг, то дети не будут сохраняться, нужно например для CTemplateTreeItem
+	int nNeedExpand;								// флаг для сохранения состояния дерева, если установлен, то после загрузки дерево раскрывается
+	int nImageIndex;
+	ETreeItemType nItemType;
+	CTreeItemList treeItemList;
+	SECTreeCtrl *pTreeCtrl;					// инициализируется при добавлении в дерево
+	CTreeItem *pItemParent;
+	HTREEITEM hItem;
+	string szDefaultName;						//Это имя используется для сортировки и расширения дерева
+	string szDisplayName;						//Под этим именем видно в дереве
+
+	CChildItemsList defaultChilds;	// эти значения инициализируются в InitDefaultValues()
+	CPropVector defaultValues;			// тоже в InitDefaultValues();
+
+public:
+	CPropVector values;							//public т к используется для инициализации ObjectInspector там надо проходить по списку items
+
+public:
+	CTreeItem();
+	virtual ~CTreeItem();
+
+	void SetTreeCtrl( SECTreeCtrl *pTree ) { pTreeCtrl = pTree; }
+	void SetParent( CTreeItem *pParent ) { pItemParent = pParent; }
+	void SetHTREEITEM( HTREEITEM handle ) { hItem = handle; }
+	HTREEITEM GetHTREEITEM() { return hItem; }
+
+	void SetItemName( const char *szNewName ) { szDisplayName = szNewName; }
+	const char *GetItemName() { return szDisplayName.c_str(); }
+
+	void SelectMeInTheTree();
+	void DeleteMeInParentTreeItem();
+	void ChangeItemImage( int nNewImage );			//Изменяет картинку для уже вставленного item
+	void ChangeItemName( const char *pszName );	//Изменяет имя для уже вставленного в дерево
+	void ExpandTreeItem( bool bExpand );
+
+	CTreeItem *GetParentTreeItem();
+	CTreeItem *GetSiblingItem( int nType, int nIndex = 0 );
+
+	//Операции со списком TreeItem
+	void AddChild( CTreeItem *pItem );				//Добавляет item в список treeItemList и в дерево pTreeCtrl
+	void RemoveChild( CTreeItem *pItem );			//Убивает item из списка и из дерева
+	void RemoveAllChilds();										//Убивает все внутренние item из дерева и списка
+	int  GetChildsCount() { return treeItemList.size(); }
+	CTreeItemList::const_iterator GetBegin() const { return treeItemList.begin(); }
+	CTreeItemList::const_iterator GetEnd() const { return treeItemList.end(); }
+	CTreeItem *GetChildItem( int nType, int nIndex = 0 );
+
+	ETreeItemType GetItemType() { return nItemType; }
+	int GetImageIndex() { return nImageIndex; }
+
+	bool IsCompatibleWith( CTreeItem *pCompare );
+	virtual bool CopyItemTo( CTreeItem *pTo );
+
+	virtual void InsertChildItems();					//Вызывается после создания всех компонентов для занесения их в дерево
+	void DeleteNullChilds();									//проходит по списку childs и удаляет все нулевые элементы
+	void CreateDefaultChilds();								//проходит по списку defaultItemList и если не находит каких-то items, то добавляет их в список childs
+	virtual void CallMeAfterSerialize() {}
+protected:
+	void InsertNewTreeItem( CTreeItem *pItem );	//Собственно добавляет item в дерево
+
+	virtual void InitDefaultValues();		//вызывается из всех конструкторов, тут инициализируются defaultValues
+	//также в этой функции создаются defaultChilds эта функция обязательно должна вызываться из конструктора.
+
+public:
+	virtual void UpdateItemValue( int nItemId, const CVariant &value );
+	virtual void MyLButtonClick() {}
+	virtual void MyRButtonClick() {}
+	virtual void MyKeyDown( int nChar ) {}
+
+	virtual int operator&( IDataTree &ss );
+};
+
+
+typedef list< pair<float, float> > CFramesList;
+
+class CKeyFrameTreeItem : public CTreeItem
+{
+	OBJECT_NORMAL_METHODS( CKeyFrameTreeItem );
+public:
+	CFramesList framesList;
+	float fMinValX, fMaxValX, fStepX, fMinValY, fMaxValY, fStepY;
+	bool bResizeMode;
+	
+	CKeyFrameTreeItem()
+	{
+		nItemType = E_KEYFRAME_TREE_ITEM;
+		nImageIndex = 0;
+		fMinValX = 0.0f;
+		fMaxValX = 1.0f;
+		fStepX = 0.1f;
+		fMinValY = 0.0f;
+		fMaxValY = 1.0f;
+		fStepY = 0.1f;
+		bResizeMode = false;
+	}
+	
+	~CKeyFrameTreeItem() {};
+	
+	void SetFramesList( const CFramesList &frames ) { framesList = frames; }
+	virtual int operator&( IDataTree &ss );
+};
+
+#endif		//__TREEITEM_H__

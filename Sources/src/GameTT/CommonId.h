@@ -1,0 +1,33 @@
+#ifndef __COMMON_ID_H__
+#define __COMMON_ID_H__
+
+
+enum ECommonId
+{
+	IMC_CANCEL		= 10001,
+	IMC_OK				= 10002,
+	MESSAGE_KEY_UP			= 20000,
+	MESSAGE_KEY_DOWN		= 20001,
+	MESSAGE_KEY_LEFT		= 20002,
+	MESSAGE_KEY_RIGHT		= 20003,
+	IMC_SELECTION_CHANGED = 1000,
+
+	HIDE_TUTORIAL_WINDOW_ID	= 31414,
+	TUTORIAL_WINDOW_ID	= 31415,
+	TUTORIAL_BUTTON_ID	= 31416,
+	TUTORIAL_TRY_SHOW_IF_NOT_SHOWN = 31417,
+	
+	E_GAMESY_LOGO						= 31418,
+	E_DARKEN_SCREEN					= 31420,
+
+	MEDAL = 10,
+	
+	
+};
+
+
+
+FILETIME GetFileChangeTime( const char *pszFileName );
+std::string GetFileChangeTimeString( const char *pszFileName );
+
+#endif		//__COMMON_ID_H__

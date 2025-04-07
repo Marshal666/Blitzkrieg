@@ -1,0 +1,8 @@
+pStream != 0
+Can't open stream "consts.xml"
+
+C:\home\a7\Game\..\StreamIO\StructureSaver.h(200): WinMain
+<UNKNOWN>(0): WinMainCRTStartup
+<UNKNOWN>(0): ProcessIdToSessionId
+
+

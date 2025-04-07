@@ -1,0 +1,149 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,2,0,0
+ PRODUCTVERSION 1,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "NIVAL Interactive\0"
+            VALUE "FileDescription", "Scene\0"
+            VALUE "FileVersion", "1, 2, 0, 0\0"
+            VALUE "InternalName", "Scene\0"
+            VALUE "LegalCopyright", "Copyright © 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Scene.dll\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "NIVAL Interactive Scene\0"
+            VALUE "ProductVersion", "1, 2, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_ATTACK              CURSOR  DISCARDABLE     "cursor\\attack.cur"
+IDC_AVIATION            CURSOR  DISCARDABLE     "cursor\\aviation.cur"
+IDC_BOARD               CURSOR  DISCARDABLE     "cursor\\board.cur"
+IDC_BUILD_ANTITANK      CURSOR  DISCARDABLE     "cursor\\build_antitank.cur"
+IDC_BUILD_BRIDGE        CURSOR  DISCARDABLE     "cursor\\build_bridge.cur"
+IDC_BUILD_ENTRENCHMENT  CURSOR  DISCARDABLE     "cursor\\build_entrenchment.cur"
+IDC_BUILD_WIRE_FENCE    CURSOR  DISCARDABLE     "cursor\\build_wire_fence.cur"
+IDC_CANCEL              CURSOR  DISCARDABLE     "cursor\\cancel.cur"
+IDC_CLEAR_MINES         CURSOR  DISCARDABLE     "cursor\\clear_mines.cur"
+IDC_DEPLOY_ARTILLERY    CURSOR  DISCARDABLE     "cursor\\deploy_artillery.cur"
+IDC_ENTRENCH_SELF       CURSOR  DISCARDABLE     "cursor\\entrench_self.cur"
+IDC_FILL_RU             CURSOR  DISCARDABLE     "cursor\\fill_ru.cur"
+IDC_FOLLOW              CURSOR  DISCARDABLE     "cursor\\follow.cur"
+IDC_HOOK_ARTILLERY      CURSOR  DISCARDABLE     "cursor\\hook_artillery.cur"
+IDC_HUMAN_RESUPPLY      CURSOR  DISCARDABLE     "cursor\\human_resupply.cur"
+IDC_INTERMISSION        CURSOR  DISCARDABLE     "cursor\\intermission.cur"
+IDC_LEAVE               CURSOR  DISCARDABLE     "cursor\\leave.cur"
+IDC_MOVE                CURSOR  DISCARDABLE     "cursor\\move.cur"
+IDC_MOVE2GRID           CURSOR  DISCARDABLE     "cursor\\move2grid.cur"
+IDC_PLACE_MARKER        CURSOR  DISCARDABLE     "cursor\\place_marker.cur"
+IDC_RANGING             CURSOR  DISCARDABLE     "cursor\\ranging.cur"
+IDC_REPAIR              CURSOR  DISCARDABLE     "cursor\\repair.cur"
+IDC_RESUPPLY            CURSOR  DISCARDABLE     "cursor\\resupply.cur"
+IDC_ROTATE              CURSOR  DISCARDABLE     "cursor\\rotate.cur"
+IDC_SELECT_ENEMY        CURSOR  DISCARDABLE     "cursor\\select_enemy.cur"
+IDC_SELECT_FRIEND       CURSOR  DISCARDABLE     "cursor\\select_friend.cur"
+IDC_SELECT_NEUTRAL      CURSOR  DISCARDABLE     "cursor\\select_neutral.cur"
+IDC_SELF_ACTION         CURSOR  DISCARDABLE     "cursor\\self_actions.cur"
+IDC_SET_MINES           CURSOR  DISCARDABLE     "cursor\\set_mines.cur"
+IDC_SUPPRESS            CURSOR  DISCARDABLE     "cursor\\supress.cur"
+IDC_SWARM               CURSOR  DISCARDABLE     "cursor\\swarm.cur"
+IDC_UNKNOWN             CURSOR  DISCARDABLE     "cursor\\unknown.cur"
+IDC_USE_SPYGLASSES      CURSOR  DISCARDABLE     "cursor\\use_spyglasses.cur"
+IDC_CAPTURE_ARTILLERY   CURSOR  DISCARDABLE     "cursor\\capture_artillery.cur"
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

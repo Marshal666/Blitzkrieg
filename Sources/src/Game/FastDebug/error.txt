@@ -1,0 +1,10 @@
+szParam.size() < 4
+Wrong param "space test\dessau.xml" as map name
+
+C:\home\a7\Game\main.cpp(512): ExtractMapName
+C:\home\a7\Game\main.cpp(543): ProcessCommandLine
+C:\home\a7\Game\main.cpp(133): WinMain
+<UNKNOWN>(0): WinMainCRTStartup
+<UNKNOWN>(0): ProcessIdToSessionId
+
+
