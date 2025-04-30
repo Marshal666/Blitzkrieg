@@ -1,75 +1,75 @@
-[English](README_English.md)        [Русский](README.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
+[English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
 
 [![Blitzkrieg Trailer](Blitzkrieg.png)](https://www.youtube.com/watch?v=zNxMvTcsJbk)
 
-Компьютерная игра [Blitzkrieg](https://wikipedia.org/wiki/Blitzkrieg_(video_game)) это первая часть легендарной серии военных стратегий в реальном времени, разработанная [Nival Interactive](http://nival.com/) и выпущенная компанией 1С 28 марта 2003 года.
+The computer game [Blitzkrieg](https://wikipedia.org/wiki/Blitzkrieg_(video_game)) is the first installment of the legendary series of real-time strategy war games, developed by [Nival Interactive](http://nival.com/) and released by 1C Company on March 28, 2003.
 
-Игра до сих пор доступна в [Steam](https://store.steampowered.com/app/313480/Blitzkrieg_Anthology/) и [GOG.com](https://www.gog.com/en/game/blitzkrieg_anthology).
+The game is still available on [Steam](https://store.steampowered.com/app/313480/Blitzkrieg_Anthology/) and [GOG.com](https://www.gog.com/en/game/blitzkrieg_anthology).
 
-В 2025 году исходный код одиночной игры был открыт под [специальной лицензией](LICENSE.md), запрещающей коммерческое использование, но полностью открытой для сообщества игры, образования и исследований. 
-Перед использованием внимательно ознакомьтесь с условиями [лицензионного соглашения](LICENSE.md).
+In 2025, the game's singleplayer source code was released under a [special license](LICENSE.md) that prohibits commercial use but is completely open for the game's community, education and research.
+Please review the terms of the [license agreement](LICENSE.md) carefully before using it.
 
-# Что находится в этом репозитории
-- `Data` - данные игры
-- `Soft` и `Tools` - сопутствующие инструменты для разработки
-- `Versions` - собранные версии игры, тут же и редакторы карт
-- `Sources` - исходный код и инструменты
+# What is in this repository
+- `Data` - game data
+- `Soft` and `Tools` - development tools
+- `Versions` - compiled versions of the game, including map editors
+- `Sources` - source code and tools
 
-# Подготовка
+# Preparation
 
-Все библиотеки из директории SDK нужны для компиляции. Пути к ним необходимо внести в **Tools => Options => Directories** в следующем порядке:
+All libraries from the SDK directory are needed for compilation. The paths to them must be entered in **Tools => Options => Directories** in the following order:
 
 ## Include
 ```
 C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT
-C:\SDK\BINK (не включена в репозиторий)
-C:\SDK\FMOD\API\INC (не включена в репозиторий)
+C:\SDK\BINK (not included in the repository)
+C:\SDK\FMOD\API\INC (not included in the repository)
 C:\SDK\S3TC
-C:\SDK\STINGRAY STUDIO 2002\INCLUDE\TOOLKIT (не включена в репозиторий)
-C:\SDK\STINGRAY STUDIO 2002\INCLUDE (не включена в репозиторий)
-C:\SDK\STINGRAY STUDIO 2002\REGEX\INCLUDE (не включена в репозиторий)
+C:\SDK\STINGRAY STUDIO 2002\INCLUDE\TOOLKIT (not included in the repository)
+C:\SDK\STINGRAY STUDIO 2002\INCLUDE (not included in the repository)
+C:\SDK\STINGRAY STUDIO 2002\REGEX\INCLUDE (not included in the repository)
 C:\SDK\Maya4.0\include
 ```
 
 ## Lib
 ```
-C:\SDK\BINK (не включена в репозиторий)
-C:\SDK\FMOD\API\LIB (не включена в репозиторий)
+C:\SDK\BINK (not included in the repository)
+C:\SDK\FMOD\API\LIB (not included in the repository)
 C:\SDK\S3TC
-C:\SDK\STINGRAY STUDIO 2002\LIB (не включена в репозиторий)
-C:\SDK\STINGRAY STUDIO 2002\REGEX\LIB (не включена в репозиторий)
+C:\SDK\STINGRAY STUDIO 2002\LIB (not included in the repository)
+C:\SDK\STINGRAY STUDIO 2002\REGEX\LIB (not included in the repository)
 C:\SDK\Maya4.0\lib
 ```
 
-Кроме того, необходим **DirectX 8.1** или выше (он сам включится в пути автоматически).
+In addition, **DirectX 8.1** or higher is required (it will automatically be added to the paths).
 
-### Важные примечания
+### Important Notes
 
-- Библиотеки **Bink, FMOD, Stringray** не включены в этот репозиторий, так как требуют отдельного лицензирования.
-- **stlport** *должен* находиться в директории Visual C, рядом с `include`.
-- Путь `C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT` должен стоять **первым**, иначе сборка не пройдет.
-
----
-
-# Дополнительные инструменты
-
-- В директории **tools** находятся утилиты, используемые при сборке.
-- Ресурсы хранятся в формате **zip (deflate)** и упаковываются/распаковываются с помощью **zip/unzip**.
-- **Не используйте pkzip** — он обрезает имена файлов и не использует алгоритм deflate.
-- Часть данных редактируется вручную через **XML-редактор**, так как частое редактирование не требовалось, а писать отдельный редактор было нецелесообразно.
+- **Bink, FMOD, Stingray** libraries are not included in this repository as they require separate licensing.
+- **stlport** *must* be located in the Visual C directory, alongside `include`.
+- The path `C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT` must be **first**, otherwise, the build will fail.
 
 ---
 
-# Файлы в `data`
+# Additional Tools
 
-В директории игры, в поддиректории **data**, находятся файлы, редактируемые вручную или требующие простого размещения:
+- The **tools** directory contains utilities used during the build process.
+- Resources are stored in **zip (deflate)** format and are packed/unpacked using **zip/unzip**.
+- **Do not use pkzip** — it truncates file names and does not use the deflate algorithm.
+- Some data is edited manually using an **XML-editor**, as frequent editing was not necessary and writing a separate editor was impractical.
 
-- `sin.arr` — бинарный файл с таблицей синусов (просто положить, не трогать).
-- `objects.xml` — реестр игровых объектов (редактируется вручную).
-- `consts.xml` — игровые константы для дизайнеров (редактируется вручную).
-- `MusicSettings.xml` — настройки музыки (редактируется вручную).
-- `partys.xml` — данные по странам (какой squad использовать для gun crew, какую модель парашютиста и т. д.).
+---
 
-## Файлы в `medals`
+# Files in `data`
 
-В поддиректории **medals**, по странам, расположены файлы `ranks.xml`, содержащие звания и **experience** для их получения.
+In the game's directory, under **data**, there are files that are manually edited or simply placed:
+
+- `sin.arr` — binary file with a sine table (just place it, do not touch).
+- `objects.xml` — registry of game objects (edited manually).
+- `consts.xml` — game constants for designers (edited manually).
+- `MusicSettings.xml` — music settings (edited manually).
+- `partys.xml` — country data (which squad to use for gun crew, parachutist model, etc.).
+
+## Files in `medals`
+
+In the **medals** subdirectory, files `ranks.xml` contain ranks and **experience** needed to obtain them, organized by country.
