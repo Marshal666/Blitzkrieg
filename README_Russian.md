@@ -2,7 +2,7 @@
 
 [![Blitzkrieg Trailer](Blitzkrieg.png)](https://www.youtube.com/watch?v=zNxMvTcsJbk)
 
-Компьютерная игра [Blitzkrieg](https://wikipedia.org/wiki/Blitzkrieg_(video_game)) это первая часть легендарной серии военных стратегий в реальном времени, разработанная [Nival Interactive](http://nival.com/) и выпущенная компанией 1С 28 марта 2003 года.
+Компьютерная игра [Blitzkrieg](https://wikipedia.org/wiki/Blitzkrieg_(video_game)) это первая часть легендарной серии военных стратегий в реальном времени, разработанная [Nival Interactive](http://nival.com/) и выпущенная 28 марта 2003 года.
 
 Игра до сих пор доступна в [Steam](https://store.steampowered.com/app/313480/Blitzkrieg_Anthology/) и [GOG.com](https://www.gog.com/en/game/blitzkrieg_anthology).
 

@@ -1,24 +1,25 @@
 [English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
 
-[![Blitzkrieg Trailer](Blitzkrieg.png)](https://www.youtube.com/watch?v=zNxMvTcsJbk)
+[![Blitzkrieg トレーラー](Blitzkrieg.png)](https://www.youtube.com/watch?v=zNxMvTcsJbk)
 
-コンピューターゲーム「[Blitzkrieg](https://wikipedia.org/wiki/Blitzkrieg_(video_game))」は、[Nival Interactive](http://nival.com/)によって開発され、2003年3月28日に1C Companyから発売された伝説的なリアルタイムストラテジー戦争ゲームシリーズの第一弾です。
+コンピューターゲーム [Blitzkrieg](https://wikipedia.org/wiki/Blitzkrieg_(video_game)) は、伝説的なリアルタイム戦略ウォーゲームシリーズの第一作であり、[Nival Interactive](http://nival.com/) によって開発され、2003年3月28日にリリースされました。
 
-このゲームは現在も[Steam](https://store.steampowered.com/app/313480/Blitzkrieg_Anthology/)や[GOG.com](https://www.gog.com/en/game/blitzkrieg_anthology)で入手可能です。
+このゲームは現在でも [Steam](https://store.steampowered.com/app/313480/Blitzkrieg_Anthology/) および [GOG.com](https://www.gog.com/en/game/blitzkrieg_anthology) で入手可能です。
 
-2025年、シングルプレイヤーのソースコードが[特別なライセンス](LICENSE.md)の下でリリースされました。これにより商業的利用は禁止されていますが、ゲームコミュニティ、教育、研究のためには完全にオープンになっています。利用する前に[ライセンス契約](LICENSE.md)の条件をよく確認してください。
+2025年、ゲームのシングルプレイヤーソースコードが[特別ライセンス](LICENSE.md)の下で公開され、商用利用は禁じられていますが、ゲームコミュニティ、教育、研究目的では完全にオープンになりました。  
+利用する前に、[ライセンス契約](LICENSE.md)の条件をよくご確認ください。
 
-# このリポジトリにあるもの
+# このリポジトリに含まれているもの
 - `Data` - ゲームデータ
-- `Soft` と `Tools` - 開発ツール
-- `Versions` - ゲームのコンパイル済みバージョン（マップエディターも含む）
+- `Soft` および `Tools` - 開発用ツール
+- `Versions` - ゲームのコンパイル済みバージョンとマップエディタ
 - `Sources` - ソースコードとツール
 
 # 準備
 
-SDKディレクトリのすべてのライブラリがコンパイルに必要です。それらのパスは、以下の順序で**ツール => オプション => ディレクトリ**に入力する必要があります。
+SDKディレクトリ内のすべてのライブラリがコンパイルには必要です。次の順番でパスを **Tools => Options => Directories** に入力してください：
 
-## インクルード
+## Include
 ```
 C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT
 C:\SDK\BINK（リポジトリには含まれていません）
@@ -30,7 +31,7 @@ C:\SDK\STINGRAY STUDIO 2002\REGEX\INCLUDE（リポジトリには含まれてい
 C:\SDK\Maya4.0\include
 ```
 
-## ライブラリ
+## Lib
 ```
 C:\SDK\BINK（リポジトリには含まれていません）
 C:\SDK\FMOD\API\LIB（リポジトリには含まれていません）
@@ -40,35 +41,35 @@ C:\SDK\STINGRAY STUDIO 2002\REGEX\LIB（リポジトリには含まれていま�
 C:\SDK\Maya4.0\lib
 ```
 
-さらに、**DirectX 8.1**以上が必要です（パスには自動で追加されます）。
+また、**DirectX 8.1** 以上が必要です（自動的にパスへ追加されます）。
 
 ### 重要な注意事項
 
-- **Bink, FMOD, Stingray** のライブラリは、このリポジトリには含まれていません。別途ライセンスが必要です。
-- **stlport**は、Visual Cディレクトリ内の`include`の隣に配置されている必要があります。
-- パス `C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT` は**最初**に配置されないとビルドが失敗します。
+- **Bink、FMOD、Stingray** ライブラリは、別途ライセンスが必要なため、このリポジトリには含まれていません。
+- **stlport** は必ず Visual C ディレクトリの `include` と同じ場所に配置してください。
+- パス `C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT` は必ず**最初**に設定してください。そうでないとビルドに失敗します。
 
 ---
 
 # 追加ツール
 
-- **ツール**ディレクトリには、ビルドプロセスで使用されるユーティリティが含まれています。
-- リソースは**zip (deflate)**形式で保存され、**zip/unzip**を用いて圧縮/解凍されます。
-- **pkzipを使用しないでください** - ファイル名が短縮され、deflateアルゴリズムが使用されません。
-- データの一部は別のエディタを作るには不便であるため、頻繁な編集は必要とされず、**XMLエディタ**を用いて手動で編集されます。
+- **tools** ディレクトリにはビルド時に使用するユーティリティがあります。
+- リソースは **zip (deflate)** 形式で保存されており、**zip/unzip** でパック・アンパックします。
+- **pkzipは使わないでください** — ファイル名が切られ、deflateアルゴリズムが使われません。
+- 一部のデータは **XMLエディタ**で手作業で編集します。頻繁な編集が不要であり、専用エディタの作成は非現実的だったためです。
 
 ---
 
-# `data`内のファイル
+# `data` 内のファイル
 
-ゲームディレクトリの**data**内には、手動で編集するか、単に配置するファイルがあります。
+ゲームディレクトリ内の **data** サブディレクトリには、手動で編集したり単純に配置するだけのファイルが存在します：
 
-- `sin.arr` — サインテーブルを持つバイナリファイル（単に配置する、触らない）。
-- `objects.xml` — ゲームオブジェクトのレジストリ（手動で編集）。
-- `consts.xml` — デザイナー用のゲーム定数（手動で編集）。
-- `MusicSettings.xml` — 音楽設定（手動で編集）。
-- `partys.xml` — 国データ（砲兵隊に使用する部隊、パラシューティストモデルなど）。
+- `sin.arr` — サインテーブルのバイナリファイル（そのまま置いて、編集しないでください）。
+- `objects.xml` — ゲームオブジェクトのレジストリ（手動編集）。
+- `consts.xml` — デザイナー用のゲーム定数（手動編集）。
+- `MusicSettings.xml` — 音楽設定（手動編集）。
+- `partys.xml` — 国家データ（砲兵チームの squad、落下傘兵モデルなど）。
 
-## `medals`内のファイル
+## `medals` 内のファイル
 
-**medals**サブディレクトリには、国別に配置された`ranks.xml`ファイルがあり、それらを得るためのランクと**経験**が含まれています。
+**medals** サブディレクトリ内には、各国ごとに `ranks.xml` ファイルがあり、各ランクとその獲得に必要な**経験値**が記載されています。

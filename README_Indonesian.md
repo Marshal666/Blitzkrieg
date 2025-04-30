@@ -2,21 +2,22 @@
 
 [![Blitzkrieg Trailer](Blitzkrieg.png)](https://www.youtube.com/watch?v=zNxMvTcsJbk)
 
-Permainan komputer [Blitzkrieg](https://wikipedia.org/wiki/Blitzkrieg_(video_game)) adalah edisi pertama dari seri legendaris permainan strategi perang waktu nyata, yang dikembangkan oleh [Nival Interactive](http://nival.com/) dan dirilis oleh 1C Company pada 28 Maret 2003.
+Game komputer [Blitzkrieg](https://wikipedia.org/wiki/Blitzkrieg_(video_game)) adalah seri pertama dari rangkaian game strategi perang waktu nyata legendaris, dikembangkan oleh [Nival Interactive](http://nival.com/) dan dirilis pada 28 Maret 2003.
 
-Permainan ini masih tersedia di [Steam](https://store.steampowered.com/app/313480/Blitzkrieg_Anthology/) dan [GOG.com](https://www.gog.com/en/game/blitzkrieg_anthology).
+Game ini masih tersedia di [Steam](https://store.steampowered.com/app/313480/Blitzkrieg_Anthology/) dan [GOG.com](https://www.gog.com/en/game/blitzkrieg_anthology).
 
-Pada tahun 2025, kode sumber singleplayer dari permainan ini dirilis di bawah [lisensi khusus](LICENSE.md) yang melarang penggunaan komersial tetapi sepenuhnya terbuka untuk komunitas permainan, pendidikan, dan penelitian. Harap tinjau persyaratan dari [perjanjian lisensi](LICENSE.md) dengan cermat sebelum menggunakannya.
+Pada tahun 2025, kode sumber mode pemain tunggal game ini dirilis di bawah [lisensi khusus](LICENSE.md) yang melarang penggunaan komersial, namun sepenuhnya terbuka untuk komunitas game, pendidikan, dan riset.
+Silakan baca dengan cermat syarat-syarat [perjanjian lisensi](LICENSE.md) sebelum menggunakannya.
 
-# Apa yang ada di repositori ini
-- `Data` - data permainan
-- `Soft` dan `Tools` - alat pengembangan
-- `Versions` - versi permainan yang sudah dikompilasi, termasuk editor peta
-- `Sources` - kode sumber dan alat
+# Isi repositori ini
+- `Data` - data game
+- `Soft` dan `Tools` - alat-alat pengembangan terkait
+- `Versions` - versi game yang sudah dikompilasi, termasuk editor peta
+- `Sources` - kode sumber dan alat-alatnya
 
 # Persiapan
 
-Semua pustaka dari direktori SDK diperlukan untuk kompilasi. Jalur ke mereka harus dimasukkan dalam **Tools => Options => Directories** dalam urutan berikut:
+Semua pustaka dari direktori SDK dibutuhkan untuk kompilasi. Jalurnya harus dimasukkan pada **Tools => Options => Directories** dengan urutan berikut:
 
 ## Include
 ```
@@ -40,35 +41,35 @@ C:\SDK\STINGRAY STUDIO 2002\REGEX\LIB (tidak termasuk dalam repositori)
 C:\SDK\Maya4.0\lib
 ```
 
-Selain itu, **DirectX 8.1** atau lebih tinggi diperlukan (ini akan secara otomatis ditambahkan ke jalur).
+Selain itu, dibutuhkan **DirectX 8.1** atau lebih tinggi (akan otomatis ditambahkan pada path).
 
 ### Catatan Penting
 
-- Pustaka **Bink, FMOD, Stringray** tidak termasuk dalam repositori ini karena memerlukan lisensi terpisah.
-- **stlport** *harus* berada di direktori Visual C, bersama dengan `include`.
-- Jalur `C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT` harus **pertama**, jika tidak, pembangunan akan gagal.
+- Library **Bink, FMOD, Stingray** tidak termasuk dalam repositori ini karena memerlukan lisensi terpisah.
+- **stlport** *harus* berada di direktori Visual C, berdampingan dengan `include`.
+- Path `C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT` harus berada **paling atas**, jika tidak, proses build akan gagal.
 
 ---
 
 # Alat Tambahan
 
-- Direktori **tools** berisi utilitas yang digunakan selama proses pembangunan.
-- Sumber daya disimpan dalam format **zip (deflate)** dan dikemas/dibuka menggunakan **zip/unzip**.
-- **Jangan gunakan pkzip** — ia memotong nama file dan tidak menggunakan algoritma deflate.
-- Beberapa data diedit secara manual menggunakan editor **XML**, karena pengeditan yang sering tidak diperlukan dan menulis editor terpisah tidak praktis.
+- Direktori **tools** berisi utilitas yang digunakan selama proses build.
+- Resource disimpan dalam format **zip (deflate)** dan dikemas/diekstrak menggunakan **zip/unzip**.
+- **Jangan gunakan pkzip** — pkzip akan memotong nama file dan tidak menggunakan algoritma deflate.
+- Beberapa data diedit manual menggunakan **editor XML**, karena pengeditan yang sering tidaklah diperlukan dan membuat editor terpisah dianggap tidak efisien.
 
 ---
 
-# File dalam `data`
+# File di `data`
 
-Dalam direktori permainan, di bawah **data**, terdapat file-file yang diedit secara manual atau hanya ditempatkan:
+Pada direktori game, di subdirektori **data**, terdapat file-file yang diedit manual atau hanya perlu diletakkan:
 
-- `sin.arr` — file biner dengan tabel sinus (cukup letakkan, jangan disentuh).
-- `objects.xml` — registri objek permainan (diedit secara manual).
-- `consts.xml` — konstanta permainan untuk desainer (diedit secara manual).
-- `MusicSettings.xml` — pengaturan musik (diedit secara manual).
-- `partys.xml` — data negara (squad mana yang digunakan untuk kru senjata, model payung, dll.).
+- `sin.arr` — file biner dengan tabel sinus (cukup diletakkan, jangan diutak-atik).
+- `objects.xml` — registry objek game (diedit manual).
+- `consts.xml` — konstanta game untuk desainer (diedit manual).
+- `MusicSettings.xml` — pengaturan musik (diedit manual).
+- `partys.xml` — data negara (squad apa yang digunakan untuk kru senjata, model penerjun, dsb.).
 
-## File dalam `medals`
+## File di `medals`
 
-Dalam subdirektori **medals**, file `ranks.xml` berisi peringkat dan **pengalaman** yang dibutuhkan untuk mendapatkannya, diatur berdasarkan negara.
+Di subdirektori **medals**, per negara, terdapat file `ranks.xml` yang berisi daftar pangkat dan jumlah **experience** yang dibutuhkan untuk memperolehnya.
