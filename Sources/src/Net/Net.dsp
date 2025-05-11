@@ -175,7 +175,7 @@ LINK32=link.exe
 # Begin Special Build Tool
 OutDir=.\Profiler
 SOURCE="$(InputPath)"
-PostBuild_Cmds=copy $(OutDir)\*.dll c:\a7\*.*
+PostBuild_Cmds=copy  $(OutDir)\*.dll  c:\a7\ 
 # End Special Build Tool
 
 !ENDIF 

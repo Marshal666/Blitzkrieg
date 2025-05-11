@@ -198,7 +198,7 @@ LINK32=link.exe
 OutDir=.\Profiler
 WkspDir=.
 SOURCE="$(InputPath)"
-PostBuild_Cmds=copy $(OutDir)\*.exe c:\a7\*.*	call s:\soft\copydll.bat $(WkspDir) Profiler
+PostBuild_Cmds=copy $(OutDir)\*.exe c:\a7\	call s:\soft\copydll.bat $(WkspDir) Profiler
 # End Special Build Tool
 
 !ENDIF 

@@ -134,7 +134,7 @@ int APIENTRY WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdL
 	GetSingleton<IRandomGen>()->Init();
 	timeMeter.Sample( "random & cmd line" );
 	//
-	if ( !NWinFrame::InitApplication( hInstance, " Blitzkrieg Game", "A7_ENGINE", cmdp.nScreenSizeX, cmdp.nScreenSizeY ) )
+	if ( !NWinFrame::InitApplication( hInstance, " Blitzkrieg Game: Sneeds Feed and Seed Platinum Edition", "A7_ENGINE", cmdp.nScreenSizeX, cmdp.nScreenSizeY ) )
 		return 0xDEAD;
 	// open main resource system and register as '0'
 	timeMeter.Reset();

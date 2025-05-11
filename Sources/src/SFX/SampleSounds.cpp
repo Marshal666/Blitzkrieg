@@ -41,7 +41,7 @@ bool CSoundSample::Load( const bool bPreLoad )
 	const int nCheck = pStream->Read( &(buffer[0]), nSize );
 	//
 	NI_ASSERT_SLOW_TF( nCheck == nSize, "Readed size doesn't match requested", return false );
-	FSOUND_SAMPLE *sample = FSOUND_Sample_Load( FSOUND_UNMANAGED, &(buffer[0]), GetMode() | FSOUND_LOADMEMORY, nSize );
+	FSOUND_SAMPLE *sample = FSOUND_Sample_Load( FSOUND_UNMANAGED, &(buffer[0]), GetMode() | FSOUND_LOADMEMORY, 0, nSize );
 	if ( sample == 0 )
 		return false;
 	SetSample( sample );

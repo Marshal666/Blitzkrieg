@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 
 #include "InputAPI.h"
+#include <dinput.h>
 
 #include <mmsystem.h>
 #include "..\UI\UIMessages.h"

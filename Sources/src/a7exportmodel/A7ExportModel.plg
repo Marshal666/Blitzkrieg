@@ -1,0 +1,434 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Formats - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPAFA.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "_WINDOWS" /D "_DO_ASSERT_SLOW" /D "_DO_CHECKED_CAST" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Fp"Debug/Formats.pch" /Yu"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtAIGeneral.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtAnimation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtEffect.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtFont.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtMap.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtMesh.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtSound.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtSprite.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtTerrain.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtUnitCreation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtVSO.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPAFA.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPAFB.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "_WINDOWS" /D "_DO_ASSERT_SLOW" /D "_DO_CHECKED_CAST" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Fp"Debug/Formats.pch" /Yc"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Formats\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPAFB.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPAFC.tmp" with contents
+[
+/nologo /out:"Debug\Formats.lib" 
+.\Debug\StdAfx.obj
+.\Debug\fmtAIGeneral.obj
+.\Debug\fmtAnimation.obj
+.\Debug\fmtEffect.obj
+.\Debug\fmtFont.obj
+.\Debug\fmtMap.obj
+.\Debug\fmtMesh.obj
+.\Debug\fmtSound.obj
+.\Debug\fmtSprite.obj
+.\Debug\fmtTerrain.obj
+.\Debug\fmtUnitCreation.obj
+.\Debug\fmtVSO.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSPAFC.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+fmtAIGeneral.cpp
+fmtAnimation.cpp
+fmtEffect.cpp
+fmtFont.cpp
+fmtMap.cpp
+fmtMesh.cpp
+fmtSound.cpp
+fmtSprite.cpp
+fmtTerrain.cpp
+fmtUnitCreation.cpp
+fmtVSO.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: BugSlay - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Debug/BugSlayer.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\BugSlay\BugSlayer.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP11B3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "BUGSLAYER_EXPORTS" /D "_DO_ASSERT_SLOW" /D "_WINDOWS" /D "_DONT_LOAD_SINGLETONS" /D "_DONT_LOAD_STREAMIO" /D "_DO_CHECKED_CAST" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Fp"Debug/BugSlay.pch" /Yu"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\AllocAndFillProcessModuleList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\BSUFunctions.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\BugSlayer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\CallStack.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\CrashHandler.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\DiagAssert.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\GetLoadedModules.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\HookImportedFunctionByName.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\IsNT.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\MemDumperValidator.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\Notification.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\NT4ProcessInfo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\STLDebugTerminate.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\TLHELPProcessInfo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\DialogFunctions.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\DialogMemory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\ReportAssertionDlg.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\ReportExceptionDlg.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\DumbPow2Alloc.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\MemorySystem.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP11B3.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP11B4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "BUGSLAYER_EXPORTS" /D "_DO_ASSERT_SLOW" /D "_WINDOWS" /D "_DONT_LOAD_SINGLETONS" /D "_DONT_LOAD_STREAMIO" /D "_DO_CHECKED_CAST" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Fp"Debug/BugSlay.pch" /Yc"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP11B4.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP11B5.tmp" with contents
+[
+comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/BugSlay.pdb" /debug /machine:I386 /def:".\BugSlayer.def" /out:"Debug/BugSlay.dll" /implib:"Debug/BugSlay.lib" /pdbtype:sept 
+.\Debug\StdAfx.obj
+.\Debug\AllocAndFillProcessModuleList.obj
+.\Debug\BSUFunctions.obj
+.\Debug\BugSlayer.obj
+.\Debug\CallStack.obj
+.\Debug\CrashHandler.obj
+.\Debug\DiagAssert.obj
+.\Debug\GetLoadedModules.obj
+.\Debug\HookImportedFunctionByName.obj
+.\Debug\IsNT.obj
+.\Debug\MemDumperValidator.obj
+.\Debug\Notification.obj
+.\Debug\NT4ProcessInfo.obj
+.\Debug\STLDebugTerminate.obj
+.\Debug\TLHELPProcessInfo.obj
+.\Debug\DialogFunctions.obj
+.\Debug\DialogMemory.obj
+.\Debug\ReportAssertionDlg.obj
+.\Debug\ReportExceptionDlg.obj
+.\Debug\DumbPow2Alloc.obj
+.\Debug\MemorySystem.obj
+.\Debug\BugSlayer.res
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP11B5.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AllocAndFillProcessModuleList.cpp
+BSUFunctions.cpp
+BugSlayer.cpp
+CallStack.cpp
+CrashHandler.cpp
+DiagAssert.cpp
+GetLoadedModules.cpp
+HookImportedFunctionByName.cpp
+IsNT.cpp
+MemDumperValidator.cpp
+Notification.cpp
+NT4ProcessInfo.cpp
+STLDebugTerminate.cpp
+TLHELPProcessInfo.cpp
+DialogFunctions.cpp
+DialogMemory.cpp
+ReportAssertionDlg.cpp
+ReportExceptionDlg.cpp
+DumbPow2Alloc.cpp
+MemorySystem.cpp
+Generating Code...
+Linking...
+LINK : LNK4073: cannot create map for .ILK file; linking nonincrementally
+   Creating library Debug/BugSlay.lib and object Debug/BugSlay.exp
+<h3>
+--------------------Configuration: Misc - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP1938.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "_DO_ASSERT_SLOW" /D "_WINDOWS" /D "_DO_CHECKED_CAST" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Fp"Debug/Misc.pch" /Yu"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\Blitzkrieg\Sources\src\Misc\FileUtils.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\FreeIDs.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\GRect.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\HPTimer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\Spline.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\StrProc.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\Win32Random.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\BasicObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\Manipulator.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\MemorySystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\Thread.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP1938.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP1939.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "_DO_ASSERT_SLOW" /D "_WINDOWS" /D "_DO_CHECKED_CAST" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Fp"Debug/Misc.pch" /Yc"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\Blitzkrieg\Sources\src\Misc\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP1939.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP193A.tmp" with contents
+[
+/nologo /out:"Debug\Misc.lib" 
+.\Debug\FileUtils.obj
+.\Debug\FreeIDs.obj
+.\Debug\GRect.obj
+.\Debug\HPTimer.obj
+.\Debug\Spline.obj
+.\Debug\StrProc.obj
+.\Debug\Win32Random.obj
+.\Debug\StdAfx.obj
+.\Debug\BasicObjectFactory.obj
+.\Debug\Manipulator.obj
+.\Debug\MemorySystem.obj
+.\Debug\Thread.obj
+\Projects\Blitzkrieg\Sources\src\BugSlay\Debug\BugSlay.lib
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP193A.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+FileUtils.cpp
+FreeIDs.cpp
+GRect.cpp
+HPTimer.cpp
+Spline.cpp
+StrProc.cpp
+Win32Random.cpp
+BasicObjectFactory.cpp
+Manipulator.cpp
+MemorySystem.cpp
+Thread.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: StreamIOLib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP1EE8.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /Zi /Od /D "_MBCS" /D "_LIB" /D "_DONT_USE_SINGLETON" /D "__REDUCED_SINGLETON__" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Fp"Debug/StreamIOLib.pch" /Yu"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /Zm400 /c 
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\ZipFile.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\ZipFileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\CommonFileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\FileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\GetSLS.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\MemFileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\ModFileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\SaveLoadSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\DataBase.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\IniFile.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\DataTableXML.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\Streams.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\StructureSaver2.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\DataTreeXML.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\Singleton.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP1EE8.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP1EE9.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /Zi /Od /D "_MBCS" /D "_LIB" /D "_DONT_USE_SINGLETON" /D "__REDUCED_SINGLETON__" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Fp"Debug/StreamIOLib.pch" /Yc"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /Zm400 /c 
+"D:\Projects\Blitzkrieg\Sources\src\StreamIOLib\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP1EE9.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP1EEA.tmp" with contents
+[
+/nologo /out:"Debug\StreamIOLib.lib" 
+.\Debug\StdAfx.obj
+.\Debug\ZipFile.obj
+.\Debug\ZipFileSystem.obj
+.\Debug\CommonFileSystem.obj
+.\Debug\FileSystem.obj
+.\Debug\GetSLS.obj
+.\Debug\MemFileSystem.obj
+.\Debug\ModFileSystem.obj
+.\Debug\SaveLoadSystem.obj
+.\Debug\DataBase.obj
+.\Debug\IniFile.obj
+.\Debug\DataTableXML.obj
+.\Debug\Streams.obj
+.\Debug\StructureSaver2.obj
+.\Debug\DataTreeXML.obj
+.\Debug\Singleton.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP1EEA.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+ZipFile.cpp
+ZipFileSystem.cpp
+CommonFileSystem.cpp
+FileSystem.cpp
+GetSLS.cpp
+MemFileSystem.cpp
+ModFileSystem.cpp
+SaveLoadSystem.cpp
+DataBase.cpp
+IniFile.cpp
+DataTableXML.cpp
+Streams.cpp
+StructureSaver2.cpp
+DataTreeXML.cpp
+Singleton.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: zlib - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP27C5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "_WINDOWS" /D "_DO_CHECKED_CAST" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Fp"Debug/zlib.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\Blitzkrieg\Sources\src\zlib\adler32.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\compress.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\crc32.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\deflate.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\gzio.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\infblock.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\infcodes.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\inffast.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\inflate.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\inftrees.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\infutil.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\minigzip.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\trees.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\uncompr.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP27C5.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP27C6.tmp" with contents
+[
+/nologo /out:"Debug\zlib.lib" 
+.\Debug\adler32.obj
+.\Debug\compress.obj
+.\Debug\crc32.obj
+.\Debug\deflate.obj
+.\Debug\gzio.obj
+.\Debug\infblock.obj
+.\Debug\infcodes.obj
+.\Debug\inffast.obj
+.\Debug\inflate.obj
+.\Debug\inftrees.obj
+.\Debug\infutil.obj
+.\Debug\minigzip.obj
+.\Debug\trees.obj
+.\Debug\uncompr.obj
+.\Debug\zutil.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP27C6.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infblock.c
+infcodes.c
+inffast.c
+inflate.c
+inftrees.c
+infutil.c
+minigzip.c
+trees.c
+uncompr.c
+zutil.c
+Creating library...
+<h3>
+--------------------Configuration: A7ExportModel - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP291F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "NT_PLUGIN" /D "_DONT_USE_SINGLETON" /D "__MAYA4__" /Fp"Debug/A7ExportModel.pch" /Yu"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\A7ExportModel.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\Data.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\pluginMain.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\BoundingSphere.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\BoundingVolume.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\Matrix.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\Plane.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\Point.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\Quaternion.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\Sphere.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\Timer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\Tuple.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\Vector.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\MiniBall\ViewFrustum.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP291F.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP2920.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_AFXDLL" /D "NT_PLUGIN" /D "_DONT_USE_SINGLETON" /D "__MAYA4__" /Fp"Debug/A7ExportModel.pch" /Yc"StdAfx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Projects\Blitzkrieg\Sources\src\a7exportmodel\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP2920.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP2921.tmp" with contents
+[
+Foundation.lib OpenMaya.lib OpenMayaAnim.lib /nologo /subsystem:windows /dll /incremental:yes /pdb:"Debug/A7ExportModel.pdb" /debug /machine:I386 /out:"Debug/A7ExportModel.dll" /implib:"Debug/A7ExportModel.lib" /pdbtype:sept /export:initializePlugin /export:uninitializePlugin 
+.\Debug\StdAfx.obj
+.\Debug\A7ExportModel.obj
+.\Debug\Data.obj
+.\Debug\pluginMain.obj
+.\Debug\BoundingSphere.obj
+.\Debug\BoundingVolume.obj
+.\Debug\Matrix.obj
+.\Debug\Plane.obj
+.\Debug\Point.obj
+.\Debug\Quaternion.obj
+.\Debug\Sphere.obj
+.\Debug\Timer.obj
+.\Debug\Tuple.obj
+.\Debug\Vector.obj
+.\Debug\ViewFrustum.obj
+\Projects\Blitzkrieg\Sources\src\Formats\Debug\Formats.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Debug\Misc.lib
+\Projects\Blitzkrieg\Sources\src\StreamIOLib\Debug\StreamIOLib.lib
+\Projects\Blitzkrieg\Sources\src\zlib\Debug\zlib.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP2921.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+A7ExportModel.cpp
+Data.cpp
+pluginMain.cpp
+BoundingSphere.cpp
+BoundingVolume.cpp
+Matrix.cpp
+Plane.cpp
+Point.cpp
+Quaternion.cpp
+Sphere.cpp
+Timer.cpp
+Tuple.cpp
+Vector.cpp
+ViewFrustum.cpp
+Generating Code...
+Linking...
+LINK : LNK4073: cannot create map for .ILK file; linking nonincrementally
+   Creating library Debug/A7ExportModel.lib and object Debug/A7ExportModel.exp
+
+
+
+<h3>Results</h3>
+A7ExportModel.dll - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

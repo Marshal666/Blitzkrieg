@@ -1,4 +1,3 @@
-[English](README.md)        [Русский](README_Russian.md)        [中文](README_Chinese.md)        [हिन्दी](README_Hindi.md)        [Español](README_Spanish.md)        [Français](README_French.md)        [Deutsch](README_German.md)        [Português](README_Portuguese.md)        [日本語](README_Japanese.md)        [Bahasa Indonesia](README_Indonesian.md)
 
 [![Blitzkrieg Trailer](Blitzkrieg.png)](https://www.youtube.com/watch?v=zNxMvTcsJbk)
 
@@ -8,6 +7,11 @@ The game is still available on [Steam](https://store.steampowered.com/app/313480
 
 In 2025, the game's singleplayer source code was released under a [special license](LICENSE.md) that prohibits commercial use but is completely open for the game's community, education and research.
 Please review the terms of the [license agreement](LICENSE.md) carefully before using it.
+
+# Done changes
+Changes were mostly done so that the project can compile in Visual C++ 6.0 on Windows 10
+Removed all post-link CMD commands from projects - they didn't work on Windows 10
+Changed a few headers, predominantly SFX - "ported" to FMOD 3.75 - it seems to work
 
 # What is in this repository
 - `Data` - game data

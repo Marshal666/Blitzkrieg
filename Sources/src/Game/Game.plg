@@ -1,0 +1,43 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Game - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPF118.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "_PROFILER" /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /Fp"Profiler/Game.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm150 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Game\main.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPF118.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPF119.tmp" with contents
+[
+vtuneapi.lib d3dx8.lib version.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /incremental:no /pdb:"Profiler/Game.pdb" /debug /machine:I386 /out:"Profiler/Game.exe" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\main.obj
+.\Profiler\SysKeys.obj
+.\Profiler\WinFrame.obj
+.\Profiler\Game.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Main\Profiler\Main.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+\Projects\Blitzkrieg\Sources\src\RandomMapGen\Profiler\RandomMapGen.lib
+\Projects\Blitzkrieg\Sources\src\Formats\Profiler\Formats.lib
+\Projects\Blitzkrieg\Sources\src\LuaLib\Profiler\LuaLib.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSPF119.tmp"
+<h3>Output Window</h3>
+Compiling...
+main.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Game.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

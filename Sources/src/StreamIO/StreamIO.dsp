@@ -78,7 +78,7 @@ PostBuild_Cmds=copy $(OutDir)\*.dll c:\a7\*.*
 # PROP Ignore_Export_Lib 1
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /YX /FD /GZ /c
-# ADD CPP /nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "_DO_ASSERT_SLOW" /D "_WINDOWS" /D "_DONT_LOAD_SINGLETONS" /D "_DONT_LOAD_STREAMIO" /D "_STREAMIO_DLL" /D "_DO_CHECKED_CAST" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Yu"StdAfx.h" /FD /GZ /Zm200 /c
+# ADD CPP /nologo /MDd /W3 /Gm /GR /GX /ZI /Od /D "_DO_ASSERT_SLOW" /D "_WINDOWS" /D "_DONT_LOAD_SINGLETONS" /D "_DONT_LOAD_STREAMIO" /D "_STREAMIO_DLL" /D "_DO_CHECKED_CAST" /D "WIN32" /D "_DEBUG" /D "_STL_RANGE_CHECK" /Yu"StdAfx.h" /FD /GZ /Zm400 /c
 # ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
 # ADD BASE RSC /l 0x419 /d "_DEBUG"
@@ -191,7 +191,7 @@ LINK32=link.exe
 # Begin Special Build Tool
 OutDir=.\Profiler
 SOURCE="$(InputPath)"
-PostBuild_Cmds=copy $(OutDir)\*.dll c:\a7\*.*
+PostBuild_Cmds=copy  $(OutDir)\*.dll  c:\a7\ 
 # End Special Build Tool
 
 !ENDIF 
