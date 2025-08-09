@@ -171,7 +171,7 @@ PostBuild_Cmds=copy $(OutDir)\*.dll c:\a7\*.*
 # PROP Use_Debug_Libraries 1
 # PROP Output_Dir "Profiler"
 # PROP Intermediate_Dir "Profiler"
-# PROP Ignore_Export_Lib 1
+# PROP Ignore_Export_Lib 0
 # PROP Target_Dir ""
 # ADD BASE CPP /nologo /MD /W3 /GR /GX /Zi /Od /D "_DO_ASSERT_SLOW" /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_DO_CHECKED_CAST" /Yu"StdAfx.h" /FD /GZ /Zm150 /c
 # ADD CPP /nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Yu"StdAfx.h" /FD /Zm150 /c
@@ -184,8 +184,12 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 binkw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /debug /machine:I386 /pdbtype:sept
-# ADD LINK32 winmm.lib binkw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /debug /machine:I386 /def:".\Scene.def" /pdbtype:sept /fixed:no
+# ADD LINK32 winmm.lib avcodec.lib avformat.lib avutil.lib swscale.lib swresample.lib avdevice.lib avfilter.lib binkw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /debug /machine:I386 /def:".\Scene.def" /pdbtype:sept /fixed:no
 # SUBTRACT LINK32 /pdb:none
+# Begin Special Build Tool
+SOURCE="$(InputPath)"
+PostBuild_Cmds=%cd:~0,2%	robocopy "Profiler/" "../Game/Profiler" "Scene.dll" /NFL /NDL /NJH /NJS /nc /ns /np	exit /b 0
+# End Special Build Tool
 
 !ENDIF 
 
@@ -246,6 +250,14 @@ SOURCE=.\cursor\deploy_artillery.cur
 # Begin Source File
 
 SOURCE=.\cursor\entrench_self.cur
+# End Source File
+# Begin Source File
+
+SOURCE=.\FFMPEGVideoPlayer.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\FFMPEGVideoPlayer.h
 # End Source File
 # Begin Source File
 

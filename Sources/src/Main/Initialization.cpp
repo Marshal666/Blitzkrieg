@@ -68,6 +68,7 @@ bool STDCALL NMain::SwitchGame( bool bOn )
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 bool STDCALL NMain::Initialize( HWND hWnd3D, HWND nWndInput, HWND hWndSound, bool bGame )
 {
+	NMain::PrintLoadedModules();
 	// register main object factory
 	GetSLS()->AddFactory( GetMainObjectFactory() );
 	// files inspector
@@ -140,8 +141,18 @@ bool STDCALL NMain::Initialize( HWND hWnd3D, HWND nWndInput, HWND hWndSound, boo
 	{
 		const SModuleDescriptor *pDesc = NMain::GetModuleDesc( SCENE_SCENE );
 		// camera
-		IObjectFactory *pFactory = pDesc->pFactory;
-		CPtr<ICamera> pCamera = CreateObject<ICamera>( pFactory, SCENE_CAMERA );
+		CPtr<ICamera> pCamera = NULL;
+		IObjectFactory *pFactory = NULL;
+		if(pDesc) 
+		{
+			pFactory = pDesc->pFactory; 
+			pCamera = CreateObject<ICamera>( pFactory, SCENE_CAMERA );
+		} else 
+		{
+			printf("Failed getting pDesc for SCENE_SCENE ModuleDesc\n");
+			Sleep(8000);
+			exit(1);
+		}
 		pCamera->Init( GetSingletonGlobal() );
 		RegisterSingleton( ICamera::tidTypeID, pCamera ); // register camera to singleton
 		// cursor
@@ -261,7 +272,7 @@ bool STDCALL NMain::CanLaunch()
 	if ( GetDriveType( szModuleDir.c_str() ) == DRIVE_REMOTE )
 	{
 		MessageBox( 0, "Program can't be run from the remote drive!", "ERROR", MB_OK | MB_ICONEXCLAMATION );
-		//MessageBox( 0, "Вот так вот!", "ERROR", MB_OK | MB_ICONEXCLAMATION );
+		//MessageBox( 0, "пїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅ!", "ERROR", MB_OK | MB_ICONEXCLAMATION );
 		return false;
 	}
 

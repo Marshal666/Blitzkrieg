@@ -193,12 +193,6 @@ BSC32=bscmake.exe
 LINK32=link.exe
 # ADD BASE LINK32 htmlhelp.lib version.lib winmm.lib comsupp.lib /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
 # ADD LINK32 htmlhelp.lib version.lib winmm.lib comsupp.lib /nologo /subsystem:windows /incremental:no /debug /machine:I386 /pdbtype:sept
-# Begin Special Build Tool
-OutDir=.\Profiler
-WkspDir=.
-SOURCE="$(InputPath)"
-PostBuild_Cmds=copy $(OutDir)\*.exe c:\a7\	call s:\soft\copydll.bat $(WkspDir) Profiler
-# End Special Build Tool
 
 !ENDIF 
 

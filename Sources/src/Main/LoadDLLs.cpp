@@ -4,6 +4,9 @@
 #include "..\Misc\FileUtils.h"
 #include "..\RandomMapGen\Registry_Types.h"
 
+#include "../Scene/SceneObjectFactory.h"
+#include "../Scene/Scene.h"
+
 using namespace NWin32Helper;
 extern "C" WINBASEAPI BOOL WINAPI IsDebuggerPresent(void);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -36,15 +39,77 @@ namespace NMain
 	{
 		for ( CModulesList::const_iterator it = modules.begin(); it != modules.end(); ++it )
 		{
+			if(nType == SCENE_SCENE)
+				return GetModuleDescriptor();
 			if ( it->pDesc->nType == nType )
 				return it->pDesc;
 		}
 		NI_ASSERT_T( false, NStr::Format("can't find module of type 0x%.8x", nType) );
+		// printf("Can't find module of type %d\n", nType);
 		return 0;
 	}
+
+
+	void PrintLoadedModules() 
+	{
+		printf("Loaded modules:\n");
+		for ( CModulesList::const_iterator it = modules.begin(); it != modules.end(); ++it )
+		{
+			printf("\tModule: %s\n", it->pDLLHandle->GetModuleName().c_str());
+		}
+	}
+	
+void ListExportedFunctions(const std::string& dllPath) 
+{
+    HMODULE hModule = LoadLibraryExA(dllPath.c_str(), NULL, DONT_RESOLVE_DLL_REFERENCES);
+    if (!hModule) {
+        printf("Failed to load DLL: %s\n", dllPath.c_str());
+        return;
+    }
+
+    BYTE* baseAddr = reinterpret_cast<BYTE*>(hModule);
+    IMAGE_DOS_HEADER* dosHeader = (IMAGE_DOS_HEADER*)baseAddr;
+    if (dosHeader->e_magic != IMAGE_DOS_SIGNATURE) {
+        printf("Invalid DOS signature.\n");
+        FreeLibrary(hModule);
+        return;
+    }
+
+    IMAGE_NT_HEADERS* ntHeaders = (IMAGE_NT_HEADERS*)(baseAddr + dosHeader->e_lfanew);
+    if (ntHeaders->Signature != IMAGE_NT_SIGNATURE) {
+        printf("Invalid NT signature.\n");
+        FreeLibrary(hModule);
+        return;
+    }
+
+    IMAGE_DATA_DIRECTORY exportDirData = ntHeaders->OptionalHeader.DataDirectory[IMAGE_DIRECTORY_ENTRY_EXPORT];
+    if (exportDirData.VirtualAddress == 0) {
+        printf("No export directory found.\n");
+        FreeLibrary(hModule);
+        return;
+    }
+
+    IMAGE_EXPORT_DIRECTORY* exportDir = (IMAGE_EXPORT_DIRECTORY*)(baseAddr + exportDirData.VirtualAddress);
+    DWORD* nameRvas = (DWORD*)(baseAddr + exportDir->AddressOfNames);
+    WORD* ordinals = (WORD*)(baseAddr + exportDir->AddressOfNameOrdinals);
+    DWORD* functions = (DWORD*)(baseAddr + exportDir->AddressOfFunctions);
+
+    printf("Exported functions in %s:\n", dllPath.c_str());
+    for (DWORD i = 0; i < exportDir->NumberOfNames; ++i) {
+        const char* name = (const char*)(baseAddr + nameRvas[i]);
+        WORD ordinalIndex = ordinals[i];
+        DWORD funcRva = functions[ordinalIndex];
+        FARPROC funcAddr = (FARPROC)(baseAddr + funcRva);
+        printf("  [%u] %s @ 0x%p\n", ordinalIndex + exportDir->Base, name, funcAddr);
+    }
+
+    FreeLibrary(hModule);
+}
+
 	// load libraries
 	int STDCALL LoadAllModules( const char *pszPath )
 	{
+		printf("LoadAllModules: %s\n", pszPath);
 		std::string szPath = pszPath;
 		if ( szPath.empty() )
 			szPath = ".\\";
@@ -54,12 +119,19 @@ namespace NMain
 		for ( NFile::CFileIterator it( (szPath + "*.dll").c_str() ); !it.IsEnd(); ++it )
 		{
 			CDLLHandle *pDLL = new CDLLHandle( it.GetFilePath() );
-			if ( !pDLL->IsLoaded() )
+			// if ( !pDLL->IsLoaded() )
+			// {
+			// 	delete pDLL;
+			// 	continue;
+			// }
+
+			std::string fpth = it.GetFilePath();
+			if(fpth.find("Scene") != std::string::npos) 
 			{
-				delete pDLL;
-				continue;
+				printf("Scene.dll functions:\n");
+				ListExportedFunctions(it.GetFilePath());
 			}
-			//
+			
 			GETMODULEDESCRIPTOR pfnGetModuleDescriptor = pDLL->GetProcAddress( "GetModuleDescriptor", (GETMODULEDESCRIPTOR)0 );
 			if ( pfnGetModuleDescriptor != 0 )
 			{
@@ -73,16 +145,19 @@ namespace NMain
 					module.pDesc = pDesc;
 					//
 					NStr::DebugTrace( "New module \"%s\" of version 0x%x loaded\n", pDesc->pszName, pDesc->nVersion );
+					printf( "New module \"%s\" of version 0x%x loaded\n", pDesc->pszName, pDesc->nVersion );
 				}
 				else
 				{
 					NStr::DebugTrace( "Module \"%s\" hasn't a module descriptor or object factory", it.GetFilePath().c_str() );
+					printf( "Module \"%s\" hasn't a module descriptor or object factory", it.GetFilePath().c_str() );
 					delete pDLL;
 				}
 			}
 			else
 			{
 				NStr::DebugTrace( "Module \"%s\" have no GetModuleDescriptor() function\n", it.GetFilePath().c_str() );
+				printf( "Module \"%s\" have no GetModuleDescriptor() function\n", it.GetFilePath().c_str() );
 				delete pDLL;
 			}
 		}

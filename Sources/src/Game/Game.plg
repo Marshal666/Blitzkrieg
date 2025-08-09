@@ -3,16 +3,2063 @@
 <pre>
 <h1>Build Log</h1>
 <h3>
+--------------------Configuration: BugSlay - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/BugSlayer.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\BugSlay\BugSlayer.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP194.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "BUGSLAYER_EXPORTS" /D "_DONT_LOAD_SINGLETONS" /D "_DONT_LOAD_STREAMIO" /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/BugSlay.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\AllocAndFillProcessModuleList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\BSUFunctions.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\BugSlayer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\CallStack.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\CrashHandler.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\DiagAssert.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\GetLoadedModules.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\HookImportedFunctionByName.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\IsNT.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\MemDumperValidator.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\Notification.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\NT4ProcessInfo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\STLDebugTerminate.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\TLHELPProcessInfo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\DialogFunctions.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\DialogMemory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\ReportAssertionDlg.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\ReportExceptionDlg.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\DumbPow2Alloc.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\MemorySystem.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP194.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP195.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "BUGSLAYER_EXPORTS" /D "_DONT_LOAD_SINGLETONS" /D "_DONT_LOAD_STREAMIO" /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/BugSlay.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\BugSlay\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP195.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP196.tmp" with contents
+[
+comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/BugSlay.pdb" /debug /machine:I386 /def:".\BugSlayer.def" /out:"Profiler/BugSlay.dll" /implib:"Profiler/BugSlay.lib" /pdbtype:sept /fixed:no 
+.\Profiler\StdAfx.obj
+.\Profiler\AllocAndFillProcessModuleList.obj
+.\Profiler\BSUFunctions.obj
+.\Profiler\BugSlayer.obj
+.\Profiler\CallStack.obj
+.\Profiler\CrashHandler.obj
+.\Profiler\DiagAssert.obj
+.\Profiler\GetLoadedModules.obj
+.\Profiler\HookImportedFunctionByName.obj
+.\Profiler\IsNT.obj
+.\Profiler\MemDumperValidator.obj
+.\Profiler\Notification.obj
+.\Profiler\NT4ProcessInfo.obj
+.\Profiler\STLDebugTerminate.obj
+.\Profiler\TLHELPProcessInfo.obj
+.\Profiler\DialogFunctions.obj
+.\Profiler\DialogMemory.obj
+.\Profiler\ReportAssertionDlg.obj
+.\Profiler\ReportExceptionDlg.obj
+.\Profiler\DumbPow2Alloc.obj
+.\Profiler\MemorySystem.obj
+.\Profiler\BugSlayer.res
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP196.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AllocAndFillProcessModuleList.cpp
+BSUFunctions.cpp
+BugSlayer.cpp
+CallStack.cpp
+CrashHandler.cpp
+DiagAssert.cpp
+GetLoadedModules.cpp
+HookImportedFunctionByName.cpp
+IsNT.cpp
+MemDumperValidator.cpp
+Notification.cpp
+NT4ProcessInfo.cpp
+STLDebugTerminate.cpp
+TLHELPProcessInfo.cpp
+DialogFunctions.cpp
+DialogMemory.cpp
+ReportAssertionDlg.cpp
+ReportExceptionDlg.cpp
+DumbPow2Alloc.cpp
+MemorySystem.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/BugSlay.lib and object Profiler/BugSlay.exp
+<h3>
+--------------------Configuration: Misc - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP7D1.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Misc.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\Misc\FileUtils.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\FreeIDs.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\GRect.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\HPTimer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\Spline.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\StrProc.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\Win32Random.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\BasicObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\Manipulator.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\MemorySystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Misc\Thread.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP7D1.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP7D2.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Misc.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\Misc\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP7D2.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP7E2.tmp" with contents
+[
+/nologo /out:"Profiler\Misc.lib" 
+.\Profiler\FileUtils.obj
+.\Profiler\FreeIDs.obj
+.\Profiler\GRect.obj
+.\Profiler\HPTimer.obj
+.\Profiler\Spline.obj
+.\Profiler\StrProc.obj
+.\Profiler\Win32Random.obj
+.\Profiler\StdAfx.obj
+.\Profiler\BasicObjectFactory.obj
+.\Profiler\Manipulator.obj
+.\Profiler\MemorySystem.obj
+.\Profiler\Thread.obj
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP7E2.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+FileUtils.cpp
+FreeIDs.cpp
+GRect.cpp
+HPTimer.cpp
+Spline.cpp
+StrProc.cpp
+Win32Random.cpp
+BasicObjectFactory.cpp
+Manipulator.cpp
+MemorySystem.cpp
+Thread.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: zlib - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPD04.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/zlib.pch" /YX /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\zlib\adler32.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\compress.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\crc32.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\deflate.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\gzio.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\infblock.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\infcodes.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\inffast.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\inflate.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\inftrees.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\infutil.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\minigzip.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\trees.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\uncompr.c"
+"D:\Projects\Blitzkrieg\Sources\src\zlib\zutil.c"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPD04.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPD05.tmp" with contents
+[
+/nologo /out:"Profiler\zlib.lib" 
+.\Profiler\adler32.obj
+.\Profiler\compress.obj
+.\Profiler\crc32.obj
+.\Profiler\deflate.obj
+.\Profiler\gzio.obj
+.\Profiler\infblock.obj
+.\Profiler\infcodes.obj
+.\Profiler\inffast.obj
+.\Profiler\inflate.obj
+.\Profiler\inftrees.obj
+.\Profiler\infutil.obj
+.\Profiler\minigzip.obj
+.\Profiler\trees.obj
+.\Profiler\uncompr.obj
+.\Profiler\zutil.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSPD05.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gzio.c
+infblock.c
+infcodes.c
+inffast.c
+inflate.c
+inftrees.c
+infutil.c
+minigzip.c
+trees.c
+uncompr.c
+zutil.c
+Creating library...
+<h3>
+--------------------Configuration: StreamIO - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/StreamIO.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\StreamIO\StreamIO.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPEDB.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "_DONT_LOAD_SINGLETONS" /D "_DONT_LOAD_STREAMIO" /D "_STREAMIO_DLL" /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/StreamIO.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\ZipFile.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\ZipFileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\CommonFileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\FileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\MemFileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\ModFileSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\SaveLoadSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\DataBase.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\IniFile.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\DataTableXML.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\Streams.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\StructureSaver2.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\DataTreeXML.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\ConsoleBuffer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\GlobalVarsInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\Singleton.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\RandomGenInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\OptionSystemInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\StreamIOObjectFactory.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPEDB.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPEDC.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "_DONT_LOAD_SINGLETONS" /D "_DONT_LOAD_STREAMIO" /D "_STREAMIO_DLL" /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/StreamIO.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\StreamIO\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPEDC.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPEDD.tmp" with contents
+[
+winmm.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/StreamIO.pdb" /debug /machine:I386 /def:".\StreamIO.def" /out:"Profiler/StreamIO.dll" /implib:"Profiler/StreamIO.lib" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\ZipFile.obj
+.\Profiler\ZipFileSystem.obj
+.\Profiler\CommonFileSystem.obj
+.\Profiler\FileSystem.obj
+.\Profiler\MemFileSystem.obj
+.\Profiler\ModFileSystem.obj
+.\Profiler\SaveLoadSystem.obj
+.\Profiler\DataBase.obj
+.\Profiler\IniFile.obj
+.\Profiler\DataTableXML.obj
+.\Profiler\Streams.obj
+.\Profiler\StructureSaver2.obj
+.\Profiler\DataTreeXML.obj
+.\Profiler\ConsoleBuffer.obj
+.\Profiler\GlobalVarsInternal.obj
+.\Profiler\Singleton.obj
+.\Profiler\RandomGenInternal.obj
+.\Profiler\OptionSystemInternal.obj
+.\Profiler\StreamIOObjectFactory.obj
+.\Profiler\StreamIO.res
+\Projects\Blitzkrieg\Sources\src\zlib\Profiler\zlib.lib
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSPEDD.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalsLoader.cpp
+ZipFile.cpp
+ZipFileSystem.cpp
+CommonFileSystem.cpp
+FileSystem.cpp
+MemFileSystem.cpp
+ModFileSystem.cpp
+SaveLoadSystem.cpp
+DataBase.cpp
+IniFile.cpp
+DataTableXML.cpp
+Streams.cpp
+StructureSaver2.cpp
+DataTreeXML.cpp
+ConsoleBuffer.cpp
+GlobalVarsInternal.cpp
+Singleton.cpp
+RandomGenInternal.cpp
+OptionSystemInternal.cpp
+StreamIOObjectFactory.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/StreamIO.lib and object Profiler/StreamIO.exp
+<h3>
+--------------------Configuration: LuaLib - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP1CC8.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/LuaLib.pch" /YX /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lapi.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lcode.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\ldebug.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\ldo.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lfunc.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lgc.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\llex.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lmem.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lobject.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lparser.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lstate.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lstring.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\ltable.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\ltm.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lundump.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lvm.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\LuaSrc\lzio.c"
+"D:\Projects\Blitzkrieg\Sources\src\LuaLib\Script.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP1CC8.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP1CC9.tmp" with contents
+[
+/nologo /out:"Profiler\LuaLib.lib" 
+.\Profiler\lapi.obj
+.\Profiler\lcode.obj
+.\Profiler\ldebug.obj
+.\Profiler\ldo.obj
+.\Profiler\lfunc.obj
+.\Profiler\lgc.obj
+.\Profiler\llex.obj
+.\Profiler\lmem.obj
+.\Profiler\lobject.obj
+.\Profiler\lparser.obj
+.\Profiler\lstate.obj
+.\Profiler\lstring.obj
+.\Profiler\ltable.obj
+.\Profiler\ltm.obj
+.\Profiler\lundump.obj
+.\Profiler\lvm.obj
+.\Profiler\lzio.obj
+.\Profiler\Script.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP1CC9.tmp"
+<h3>Output Window</h3>
+Compiling...
+lapi.c
+lcode.c
+ldebug.c
+ldo.c
+lfunc.c
+lgc.c
+llex.c
+lmem.c
+lobject.c
+lparser.c
+lstate.c
+lstring.c
+ltable.c
+ltm.c
+lundump.c
+lvm.c
+lzio.c
+Script.cpp
+D:\Projects\Blitzkrieg\Sources\src\LuaLib\Script.h(293) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Creating library...
+<h3>
+--------------------Configuration: UI - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/UI.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\UI\UI.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP20E1.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/UI.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\UI\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIBasic.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIBasicM.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIInternalM.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIColorTextScroll.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIButton.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIConsole.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UICreditsScroller.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIDialog.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIEdit.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIMessageBox.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIMiniMap.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UINumberIndicator.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIScreen.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIScrollText.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UISlider.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIStatusBar.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UITimeCounter.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIVideoButton.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIComplexScroll.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIComboBox.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIListSorter.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIMedals.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIObjectiveScreen.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIObjMap.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIShortcutBar.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UITree.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\MaskManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIMask.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\UI\UIObjectFactory.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP20E1.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP20E2.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/UI.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\UI\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP20E2.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP20E3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/UI.pdb" /debug /machine:I386 /def:".\UI.def" /out:"Profiler/UI.dll" /implib:"Profiler/UI.lib" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\UIBasic.obj
+.\Profiler\UIBasicM.obj
+.\Profiler\UIInternal.obj
+.\Profiler\UIInternalM.obj
+.\Profiler\UIColorTextScroll.obj
+.\Profiler\UIButton.obj
+.\Profiler\UIConsole.obj
+.\Profiler\UICreditsScroller.obj
+.\Profiler\UIDialog.obj
+.\Profiler\UIEdit.obj
+.\Profiler\UIMessageBox.obj
+.\Profiler\UIMiniMap.obj
+.\Profiler\UINumberIndicator.obj
+.\Profiler\UIScreen.obj
+.\Profiler\UIScrollText.obj
+.\Profiler\UISlider.obj
+.\Profiler\UIStatusBar.obj
+.\Profiler\UITimeCounter.obj
+.\Profiler\UIVideoButton.obj
+.\Profiler\UIComplexScroll.obj
+.\Profiler\UIComboBox.obj
+.\Profiler\UIList.obj
+.\Profiler\UIListSorter.obj
+.\Profiler\UIMedals.obj
+.\Profiler\UIObjectiveScreen.obj
+.\Profiler\UIObjMap.obj
+.\Profiler\UIShortcutBar.obj
+.\Profiler\UITree.obj
+.\Profiler\MaskManager.obj
+.\Profiler\UIMask.obj
+.\Profiler\UIObjectFactory.obj
+.\Profiler\UI.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+\Projects\Blitzkrieg\Sources\src\LuaLib\Profiler\LuaLib.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP20E3.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalsLoader.cpp
+UIBasic.cpp
+UIBasicM.cpp
+UIInternal.cpp
+UIInternalM.cpp
+UIColorTextScroll.cpp
+UIButton.cpp
+UIConsole.cpp
+UICreditsScroller.cpp
+UIDialog.cpp
+UIEdit.cpp
+UIMessageBox.cpp
+UIMiniMap.cpp
+UINumberIndicator.cpp
+UIScreen.cpp
+UIScrollText.cpp
+UISlider.cpp
+UIStatusBar.cpp
+UITimeCounter.cpp
+UIVideoButton.cpp
+Generating Code...
+Compiling...
+UIComplexScroll.cpp
+UIComboBox.cpp
+UIList.cpp
+UIListSorter.cpp
+UIMedals.cpp
+UIObjectiveScreen.cpp
+UIObjMap.cpp
+UIShortcutBar.cpp
+UITree.cpp
+MaskManager.cpp
+UIMask.cpp
+UIObjectFactory.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/UI.lib and object Profiler/UI.exp
+<h3>
+--------------------Configuration: libpng - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP344D.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/libpng.pch" /YX /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\libpng\png.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngerror.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pnggccrd.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngget.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngmem.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngpread.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngread.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngrio.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngrtran.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngrutil.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngset.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngtest.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngtrans.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngvcrd.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngwio.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngwrite.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngwtran.c"
+"D:\Projects\Blitzkrieg\Sources\src\libpng\pngwutil.c"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP344D.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP344E.tmp" with contents
+[
+/nologo /out:"Profiler\libpng.lib" 
+.\Profiler\png.obj
+.\Profiler\pngerror.obj
+.\Profiler\pnggccrd.obj
+.\Profiler\pngget.obj
+.\Profiler\pngmem.obj
+.\Profiler\pngpread.obj
+.\Profiler\pngread.obj
+.\Profiler\pngrio.obj
+.\Profiler\pngrtran.obj
+.\Profiler\pngrutil.obj
+.\Profiler\pngset.obj
+.\Profiler\pngtest.obj
+.\Profiler\pngtrans.obj
+.\Profiler\pngvcrd.obj
+.\Profiler\pngwio.obj
+.\Profiler\pngwrite.obj
+.\Profiler\pngwtran.obj
+.\Profiler\pngwutil.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP344E.tmp"
+<h3>Output Window</h3>
+Compiling...
+png.c
+pngerror.c
+pnggccrd.c
+pngget.c
+pngmem.c
+pngpread.c
+pngread.c
+pngrio.c
+pngrtran.c
+pngrutil.c
+pngset.c
+pngtest.c
+pngtrans.c
+pngvcrd.c
+pngwio.c
+pngwrite.c
+pngwtran.c
+pngwutil.c
+Creating library...
+<h3>
+--------------------Configuration: Image - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/Image.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\Image\Image.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP3633.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Image.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\Image\ImageBMP.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Image\ImageMMP.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Image\ImageObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Image\ImagePNG.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Image\ImageProcessor.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Image\ImageReal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Image\ImageScale.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Image\ImageTGA.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Image\RectsComposition.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Image\GlobalsLoader.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP3633.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP3634.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Image.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\Image\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP3634.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP3635.tmp" with contents
+[
+s3tc.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/Image.pdb" /debug /machine:I386 /def:".\Image.def" /out:"Profiler/Image.dll" /implib:"Profiler/Image.lib" /pdbtype:sept /fixed:no 
+.\Profiler\ImageBMP.obj
+.\Profiler\ImageMMP.obj
+.\Profiler\ImageObjectFactory.obj
+.\Profiler\ImagePNG.obj
+.\Profiler\ImageProcessor.obj
+.\Profiler\ImageReal.obj
+.\Profiler\ImageScale.obj
+.\Profiler\ImageTGA.obj
+.\Profiler\RectsComposition.obj
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\Image.res
+\Projects\Blitzkrieg\Sources\src\libpng\Profiler\libpng.lib
+\Projects\Blitzkrieg\Sources\src\zlib\Profiler\zlib.lib
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP3635.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ImageBMP.cpp
+ImageMMP.cpp
+ImageObjectFactory.cpp
+ImagePNG.cpp
+ImageProcessor.cpp
+ImageReal.cpp
+ImageScale.cpp
+ImageTGA.cpp
+RectsComposition.cpp
+GlobalsLoader.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/Image.lib and object Profiler/Image.exp
+LINK : warning LNK4098: defaultlib "LIBC" conflicts with use of other libs; use /NODEFAULTLIB:library
+<h3>
+--------------------Configuration: Formats - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP3AE9.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Formats.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtAIGeneral.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtAnimation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtEffect.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtFont.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtMap.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtMesh.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtSound.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtSprite.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtTerrain.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtUnitCreation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Formats\fmtVSO.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP3AE9.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP3AEA.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Formats.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Formats\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP3AEA.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP3AEB.tmp" with contents
+[
+/nologo /out:"Profiler\Formats.lib" 
+.\Profiler\StdAfx.obj
+.\Profiler\fmtAIGeneral.obj
+.\Profiler\fmtAnimation.obj
+.\Profiler\fmtEffect.obj
+.\Profiler\fmtFont.obj
+.\Profiler\fmtMap.obj
+.\Profiler\fmtMesh.obj
+.\Profiler\fmtSound.obj
+.\Profiler\fmtSprite.obj
+.\Profiler\fmtTerrain.obj
+.\Profiler\fmtUnitCreation.obj
+.\Profiler\fmtVSO.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP3AEB.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+fmtAIGeneral.cpp
+fmtAnimation.cpp
+fmtEffect.cpp
+fmtFont.cpp
+fmtMap.cpp
+fmtMesh.cpp
+fmtSound.cpp
+fmtSprite.cpp
+fmtTerrain.cpp
+fmtUnitCreation.cpp
+fmtVSO.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: RandomMapGen - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP42BC.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/RandomMapGen.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\BetaSpline.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\PNoise.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\TerrainBuilder.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\TerrainGenerator.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\IB_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\IB_StaticMethods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\LA_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\MapInfo_CheckSums.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\MapInfo_Consts.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\MapInfo_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\MapInfo_StaticMethods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\MapInfo_StaticMethods_MiniMapCreation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\MapInfo_StaticMethods_RMGeneration.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\MapInfo_StaticMethods_SoundsCreation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\MiniMap_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\Polygons_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\Registry_Sources.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\Resource_Functions.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\Resource_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\Resource_StaticMethods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\RMG_Consts.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\RMG_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\RMG_StaticMethods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\RP_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\VA_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\VA_StaticMethods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\VSO_Methods.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\VSO_StaticMethods.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP42BC.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP42BD.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/RandomMapGen.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\RandomMapGen\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP42BD.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP42BE.tmp" with contents
+[
+/nologo /out:"Profiler\RandomMapGen.lib" 
+.\Profiler\StdAfx.obj
+.\Profiler\BetaSpline.obj
+.\Profiler\PNoise.obj
+.\Profiler\TerrainBuilder.obj
+.\Profiler\TerrainGenerator.obj
+.\Profiler\IB_Methods.obj
+.\Profiler\IB_StaticMethods.obj
+.\Profiler\LA_Methods.obj
+.\Profiler\MapInfo_CheckSums.obj
+.\Profiler\MapInfo_Consts.obj
+.\Profiler\MapInfo_Methods.obj
+.\Profiler\MapInfo_StaticMethods.obj
+.\Profiler\MapInfo_StaticMethods_MiniMapCreation.obj
+.\Profiler\MapInfo_StaticMethods_RMGeneration.obj
+.\Profiler\MapInfo_StaticMethods_SoundsCreation.obj
+.\Profiler\MiniMap_Methods.obj
+.\Profiler\Polygons_Methods.obj
+.\Profiler\Registry_Sources.obj
+.\Profiler\Resource_Functions.obj
+.\Profiler\Resource_Methods.obj
+.\Profiler\Resource_StaticMethods.obj
+.\Profiler\RMG_Consts.obj
+.\Profiler\RMG_Methods.obj
+.\Profiler\RMG_StaticMethods.obj
+.\Profiler\RP_Methods.obj
+.\Profiler\VA_Methods.obj
+.\Profiler\VA_StaticMethods.obj
+.\Profiler\VSO_Methods.obj
+.\Profiler\VSO_StaticMethods.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP42BE.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+BetaSpline.cpp
+PNoise.cpp
+TerrainBuilder.cpp
+TerrainGenerator.cpp
+IB_Methods.cpp
+IB_StaticMethods.cpp
+LA_Methods.cpp
+MapInfo_CheckSums.cpp
+MapInfo_Consts.cpp
+MapInfo_Methods.cpp
+MapInfo_StaticMethods.cpp
+MapInfo_StaticMethods_MiniMapCreation.cpp
+MapInfo_StaticMethods_RMGeneration.cpp
+MapInfo_StaticMethods_SoundsCreation.cpp
+MiniMap_Methods.cpp
+Polygons_Methods.cpp
+Registry_Sources.cpp
+Resource_Functions.cpp
+Resource_Methods.cpp
+Resource_StaticMethods.cpp
+Generating Code...
+Compiling...
+RMG_Consts.cpp
+RMG_Methods.cpp
+RMG_StaticMethods.cpp
+RP_Methods.cpp
+VA_Methods.cpp
+VA_StaticMethods.cpp
+VSO_Methods.cpp
+VSO_StaticMethods.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: AILogic - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/AILogic.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\ailogic\AILogic.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP66C2.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/AILogic.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AILogicObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\DifficultyLevel.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIWarFog.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\WarFogSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PathUnit.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PathUnitSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TrainPathUnit.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\CollisionInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\CollisionInternalSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StandartPath.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StandartSmoothMechPath.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StandartSmoothSoldierPath.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PlanePath.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ArtilleryPaths.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ParatrooperPath.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PresizePath.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TrainPath.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TankPitPath.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PathInternalSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PathFinderInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TrainPathFinder.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PathFindersSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PathSearchFuncs.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PointChecking.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Commands.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\CommandsSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Guns.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GunsSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\HitsStore.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\HitsStoreSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\MountedGun.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\MountedGunsSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Shell.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ShellSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Turret.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TurretSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\UnitGuns.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GridCreation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GroupLogic.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GroupLogicSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\UnitsSegments.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Behaviour.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\BehaviourSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\FreeFireManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\FreeFireManagerSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\RndRunUpToEnemy.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Artillery.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Aviation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Soldier.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Technics.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AnimUnitMech.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AnimUnitSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AnimUnitSoldier.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Units.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\UnitsIterators.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\UnitsSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIUnit.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIUnitInfoForGeneral.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIUnitSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\BasePathUnit.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\CommonUnit.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\QueueUnit.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ScanLimiter.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIEditorInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIEditorSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AILogicInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AILogicSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Cheats.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GlobalObjects.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StaticMembers.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIStaticMap.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIStaticMapSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\AILogic\AIGeometry.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIGeometryDebug.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\BetaSpline3D.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\CLockWithUnlockPossibilities.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ListsSet.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\MemoryConsumeCheck.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Probability.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\RectTiles.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TimeCounter.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Trigonometry.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Scripts\Scripts.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ScriptsSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AAFeedBacks.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\SuspendedUpdates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\SuspendedUpdatesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\UpdatableObject.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Updater.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\UpdaterSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\LinkObject.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\LinkObjectSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Formation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\FormationSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Diplomacy.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\InBuildingStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\InEntrenchmentStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\InTransportStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\SoldierStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\SoldierStatesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PlaneStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\PlaneStatesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TankStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TankStatesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TransportEngineerStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TransportStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TransportStatesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\CommonStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\CommonStatesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\FormationEngineerStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\FormationStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\FormationStatesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ArtilleryStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ArtilleryStatesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ArtRocketStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ArtRocketStatesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\TechnicStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\UnitStates.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\EntrenchmentCreation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\UnitCreation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AntiArtillery.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AntiArtilleryManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AntiArtillerySerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AckManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIConsts.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\DamageToEnemyUpdater.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ShootEstimatorInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ShootEstimatorSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\CombatEstimator.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Statistics.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Commander.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\EnemyRememberer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GeneralAirForce.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GeneralArtillery.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GeneralConsts.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GeneralHelper.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GeneralIntendant.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GeneralInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GeneralSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GeneralTasks.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Resistance.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\SupremeBeing.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Graph.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GraphSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\RailroadGraph.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\RailroadsSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ObstacleInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ObstaclesSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StaticObjects.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StaticObjectsIters.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\ArtilleryBulletStorage.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Bridge.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Building.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Entrenchment.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Fence.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Flag.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Mine.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\RotatingFireplacesObject.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\SmokeScreen.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StaticObject.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StormableObject.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StaticObjectsSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\MultiplayerInfo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Weather.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\Graveyard.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\GraveyardSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\AIHashFuncs.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP66C2.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP66C3.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/AILogic.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\ailogic\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP66C3.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP66C4.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib vtuneapi.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/AILogic.pdb" /debug /machine:I386 /def:".\AILogic.def" /out:"Profiler/AILogic.dll" /implib:"Profiler/AILogic.lib" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\AILogicObjectFactory.obj
+.\Profiler\DifficultyLevel.obj
+.\Profiler\AIWarFog.obj
+.\Profiler\WarFogSerialize.obj
+.\Profiler\PathUnit.obj
+.\Profiler\PathUnitSerialize.obj
+.\Profiler\TrainPathUnit.obj
+.\Profiler\CollisionInternal.obj
+.\Profiler\CollisionInternalSerialize.obj
+.\Profiler\StandartPath.obj
+.\Profiler\StandartSmoothMechPath.obj
+.\Profiler\StandartSmoothSoldierPath.obj
+.\Profiler\PlanePath.obj
+.\Profiler\ArtilleryPaths.obj
+.\Profiler\ParatrooperPath.obj
+.\Profiler\PresizePath.obj
+.\Profiler\TrainPath.obj
+.\Profiler\TankPitPath.obj
+.\Profiler\PathInternalSerialize.obj
+.\Profiler\PathFinderInternal.obj
+.\Profiler\TrainPathFinder.obj
+.\Profiler\PathFindersSerialize.obj
+.\Profiler\PathSearchFuncs.obj
+.\Profiler\PointChecking.obj
+.\Profiler\Commands.obj
+.\Profiler\CommandsSerialize.obj
+.\Profiler\Guns.obj
+.\Profiler\GunsSerialize.obj
+.\Profiler\HitsStore.obj
+.\Profiler\HitsStoreSerialize.obj
+.\Profiler\MountedGun.obj
+.\Profiler\MountedGunsSerialize.obj
+.\Profiler\Shell.obj
+.\Profiler\ShellSerialize.obj
+.\Profiler\Turret.obj
+.\Profiler\TurretSerialize.obj
+.\Profiler\UnitGuns.obj
+.\Profiler\GridCreation.obj
+.\Profiler\GroupLogic.obj
+.\Profiler\GroupLogicSerialize.obj
+.\Profiler\UnitsSegments.obj
+.\Profiler\Behaviour.obj
+.\Profiler\BehaviourSerialize.obj
+.\Profiler\FreeFireManager.obj
+.\Profiler\FreeFireManagerSerialize.obj
+.\Profiler\RndRunUpToEnemy.obj
+.\Profiler\Artillery.obj
+.\Profiler\Aviation.obj
+.\Profiler\Soldier.obj
+.\Profiler\Technics.obj
+.\Profiler\AnimUnitMech.obj
+.\Profiler\AnimUnitSerialize.obj
+.\Profiler\AnimUnitSoldier.obj
+.\Profiler\Units.obj
+.\Profiler\UnitsIterators.obj
+.\Profiler\UnitsSerialize.obj
+.\Profiler\AIUnit.obj
+.\Profiler\AIUnitInfoForGeneral.obj
+.\Profiler\AIUnitSerialize.obj
+.\Profiler\BasePathUnit.obj
+.\Profiler\CommonUnit.obj
+.\Profiler\QueueUnit.obj
+.\Profiler\ScanLimiter.obj
+.\Profiler\AIEditorInternal.obj
+.\Profiler\AIEditorSerialize.obj
+.\Profiler\AILogicInternal.obj
+.\Profiler\AILogicSerialize.obj
+.\Profiler\Cheats.obj
+.\Profiler\GlobalObjects.obj
+.\Profiler\StaticMembers.obj
+.\Profiler\AIStaticMap.obj
+.\Profiler\AIStaticMapSerialize.obj
+.\Profiler\AIGeometry.obj
+.\Profiler\AIGeometryDebug.obj
+.\Profiler\BetaSpline3D.obj
+.\Profiler\CLockWithUnlockPossibilities.obj
+.\Profiler\ListsSet.obj
+.\Profiler\MemoryConsumeCheck.obj
+.\Profiler\Probability.obj
+.\Profiler\RectTiles.obj
+.\Profiler\TimeCounter.obj
+.\Profiler\Trigonometry.obj
+.\Profiler\Scripts.obj
+.\Profiler\ScriptsSerialize.obj
+.\Profiler\AAFeedBacks.obj
+.\Profiler\SuspendedUpdates.obj
+.\Profiler\SuspendedUpdatesSerialize.obj
+.\Profiler\UpdatableObject.obj
+.\Profiler\Updater.obj
+.\Profiler\UpdaterSerialize.obj
+.\Profiler\LinkObject.obj
+.\Profiler\LinkObjectSerialize.obj
+.\Profiler\Formation.obj
+.\Profiler\FormationSerialize.obj
+.\Profiler\Diplomacy.obj
+.\Profiler\InBuildingStates.obj
+.\Profiler\InEntrenchmentStates.obj
+.\Profiler\InTransportStates.obj
+.\Profiler\SoldierStates.obj
+.\Profiler\SoldierStatesSerialize.obj
+.\Profiler\PlaneStates.obj
+.\Profiler\PlaneStatesSerialize.obj
+.\Profiler\TankStates.obj
+.\Profiler\TankStatesSerialize.obj
+.\Profiler\TransportEngineerStates.obj
+.\Profiler\TransportStates.obj
+.\Profiler\TransportStatesSerialize.obj
+.\Profiler\CommonStates.obj
+.\Profiler\CommonStatesSerialize.obj
+.\Profiler\FormationEngineerStates.obj
+.\Profiler\FormationStates.obj
+.\Profiler\FormationStatesSerialize.obj
+.\Profiler\ArtilleryStates.obj
+.\Profiler\ArtilleryStatesSerialize.obj
+.\Profiler\ArtRocketStates.obj
+.\Profiler\ArtRocketStatesSerialize.obj
+.\Profiler\TechnicStates.obj
+.\Profiler\UnitStates.obj
+.\Profiler\EntrenchmentCreation.obj
+.\Profiler\UnitCreation.obj
+.\Profiler\AntiArtillery.obj
+.\Profiler\AntiArtilleryManager.obj
+.\Profiler\AntiArtillerySerialize.obj
+.\Profiler\AckManager.obj
+.\Profiler\AIConsts.obj
+.\Profiler\DamageToEnemyUpdater.obj
+.\Profiler\ShootEstimatorInternal.obj
+.\Profiler\ShootEstimatorSerialize.obj
+.\Profiler\CombatEstimator.obj
+.\Profiler\Statistics.obj
+.\Profiler\Commander.obj
+.\Profiler\EnemyRememberer.obj
+.\Profiler\GeneralAirForce.obj
+.\Profiler\GeneralArtillery.obj
+.\Profiler\GeneralConsts.obj
+.\Profiler\GeneralHelper.obj
+.\Profiler\GeneralIntendant.obj
+.\Profiler\GeneralInternal.obj
+.\Profiler\GeneralSerialize.obj
+.\Profiler\GeneralTasks.obj
+.\Profiler\Resistance.obj
+.\Profiler\SupremeBeing.obj
+.\Profiler\Graph.obj
+.\Profiler\GraphSerialize.obj
+.\Profiler\RailroadGraph.obj
+.\Profiler\RailroadsSerialize.obj
+.\Profiler\ObstacleInternal.obj
+.\Profiler\ObstaclesSerialize.obj
+.\Profiler\StaticObjects.obj
+.\Profiler\StaticObjectsIters.obj
+.\Profiler\ArtilleryBulletStorage.obj
+.\Profiler\Bridge.obj
+.\Profiler\Building.obj
+.\Profiler\Entrenchment.obj
+.\Profiler\Fence.obj
+.\Profiler\Flag.obj
+.\Profiler\Mine.obj
+.\Profiler\RotatingFireplacesObject.obj
+.\Profiler\SmokeScreen.obj
+.\Profiler\StaticObject.obj
+.\Profiler\StormableObject.obj
+.\Profiler\StaticObjectsSerialize.obj
+.\Profiler\MultiplayerInfo.obj
+.\Profiler\Weather.obj
+.\Profiler\Graveyard.obj
+.\Profiler\GraveyardSerialize.obj
+.\Profiler\AIHashFuncs.obj
+.\Profiler\AILogic.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+\Projects\Blitzkrieg\Sources\src\LuaLib\Profiler\LuaLib.lib
+\Projects\Blitzkrieg\Sources\src\Formats\Profiler\Formats.lib
+\Projects\Blitzkrieg\Sources\src\zlib\Profiler\zlib.lib
+\Projects\Blitzkrieg\Sources\src\RandomMapGen\Profiler\RandomMapGen.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP66C4.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalsLoader.cpp
+AILogicObjectFactory.cpp
+DifficultyLevel.cpp
+AIWarFog.cpp
+WarFogSerialize.cpp
+PathUnit.cpp
+PathUnitSerialize.cpp
+TrainPathUnit.cpp
+CollisionInternal.cpp
+CollisionInternalSerialize.cpp
+StandartPath.cpp
+StandartSmoothMechPath.cpp
+StandartSmoothSoldierPath.cpp
+PlanePath.cpp
+ArtilleryPaths.cpp
+ParatrooperPath.cpp
+PresizePath.cpp
+TrainPath.cpp
+TankPitPath.cpp
+PathInternalSerialize.cpp
+Generating Code...
+Compiling...
+PathFinderInternal.cpp
+TrainPathFinder.cpp
+PathFindersSerialize.cpp
+PathSearchFuncs.cpp
+PointChecking.cpp
+Commands.cpp
+CommandsSerialize.cpp
+Guns.cpp
+GunsSerialize.cpp
+HitsStore.cpp
+HitsStoreSerialize.cpp
+MountedGun.cpp
+MountedGunsSerialize.cpp
+Shell.cpp
+ShellSerialize.cpp
+Turret.cpp
+TurretSerialize.cpp
+UnitGuns.cpp
+GridCreation.cpp
+GroupLogic.cpp
+Generating Code...
+Compiling...
+GroupLogicSerialize.cpp
+UnitsSegments.cpp
+Behaviour.cpp
+BehaviourSerialize.cpp
+FreeFireManager.cpp
+FreeFireManagerSerialize.cpp
+RndRunUpToEnemy.cpp
+Artillery.cpp
+Aviation.cpp
+Soldier.cpp
+Technics.cpp
+AnimUnitMech.cpp
+AnimUnitSerialize.cpp
+AnimUnitSoldier.cpp
+Units.cpp
+UnitsIterators.cpp
+UnitsSerialize.cpp
+AIUnit.cpp
+AIUnitInfoForGeneral.cpp
+AIUnitSerialize.cpp
+Generating Code...
+Compiling...
+BasePathUnit.cpp
+CommonUnit.cpp
+QueueUnit.cpp
+ScanLimiter.cpp
+AIEditorInternal.cpp
+AIEditorSerialize.cpp
+AILogicInternal.cpp
+AILogicSerialize.cpp
+Cheats.cpp
+GlobalObjects.cpp
+StaticMembers.cpp
+AIStaticMap.cpp
+AIStaticMapSerialize.cpp
+AIGeometry.cpp
+AIGeometryDebug.cpp
+BetaSpline3D.cpp
+CLockWithUnlockPossibilities.cpp
+ListsSet.cpp
+MemoryConsumeCheck.cpp
+Probability.cpp
+Generating Code...
+Compiling...
+RectTiles.cpp
+TimeCounter.cpp
+Trigonometry.cpp
+Scripts.cpp
+ScriptsSerialize.cpp
+AAFeedBacks.cpp
+SuspendedUpdates.cpp
+SuspendedUpdatesSerialize.cpp
+UpdatableObject.cpp
+Updater.cpp
+UpdaterSerialize.cpp
+LinkObject.cpp
+LinkObjectSerialize.cpp
+Formation.cpp
+FormationSerialize.cpp
+Diplomacy.cpp
+InBuildingStates.cpp
+InEntrenchmentStates.cpp
+InTransportStates.cpp
+SoldierStates.cpp
+Generating Code...
+D:\Projects\Blitzkrieg\Sources\src\ailogic\Formation.cpp(1101) : warning C4700: local variable 'res' used without having been initialized
+D:\Projects\Blitzkrieg\Sources\src\ailogic\Formation.cpp(1110) : warning C4700: local variable 'res' used without having been initialized
+Compiling...
+SoldierStatesSerialize.cpp
+PlaneStates.cpp
+PlaneStatesSerialize.cpp
+TankStates.cpp
+TankStatesSerialize.cpp
+TransportEngineerStates.cpp
+TransportStates.cpp
+TransportStatesSerialize.cpp
+CommonStates.cpp
+CommonStatesSerialize.cpp
+FormationEngineerStates.cpp
+FormationStates.cpp
+FormationStatesSerialize.cpp
+ArtilleryStates.cpp
+ArtilleryStatesSerialize.cpp
+ArtRocketStates.cpp
+ArtRocketStatesSerialize.cpp
+TechnicStates.cpp
+UnitStates.cpp
+EntrenchmentCreation.cpp
+Generating Code...
+Compiling...
+UnitCreation.cpp
+AntiArtillery.cpp
+AntiArtilleryManager.cpp
+AntiArtillerySerialize.cpp
+AckManager.cpp
+AIConsts.cpp
+DamageToEnemyUpdater.cpp
+ShootEstimatorInternal.cpp
+ShootEstimatorSerialize.cpp
+CombatEstimator.cpp
+Statistics.cpp
+Commander.cpp
+EnemyRememberer.cpp
+GeneralAirForce.cpp
+GeneralArtillery.cpp
+GeneralConsts.cpp
+GeneralHelper.cpp
+GeneralIntendant.cpp
+GeneralInternal.cpp
+GeneralSerialize.cpp
+Generating Code...
+Compiling...
+GeneralTasks.cpp
+Resistance.cpp
+SupremeBeing.cpp
+Graph.cpp
+GraphSerialize.cpp
+RailroadGraph.cpp
+RailroadsSerialize.cpp
+ObstacleInternal.cpp
+ObstaclesSerialize.cpp
+StaticObjects.cpp
+StaticObjectsIters.cpp
+ArtilleryBulletStorage.cpp
+Bridge.cpp
+Building.cpp
+Entrenchment.cpp
+Fence.cpp
+Flag.cpp
+Mine.cpp
+RotatingFireplacesObject.cpp
+SmokeScreen.cpp
+Generating Code...
+Compiling...
+StaticObject.cpp
+StormableObject.cpp
+StaticObjectsSerialize.cpp
+MultiplayerInfo.cpp
+Weather.cpp
+Graveyard.cpp
+GraveyardSerialize.cpp
+AIHashFuncs.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/AILogic.lib and object Profiler/AILogic.exp
+<h3>
+--------------------Configuration: Anim - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/anim.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\Anim\anim.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP2003.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Anim.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\Anim\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Anim\MeshAnimation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Anim\SpriteAnimation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Anim\AnimationManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Anim\AnimObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Anim\MatrixEffectorJogging.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Anim\MatrixEffectorLeveling.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP2003.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP2004.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Anim.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\Anim\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP2004.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP2005.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/Anim.pdb" /debug /machine:I386 /def:".\Animation.def" /out:"Profiler/Anim.dll" /implib:"Profiler/Anim.lib" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\MeshAnimation.obj
+.\Profiler\SpriteAnimation.obj
+.\Profiler\AnimationManager.obj
+.\Profiler\AnimObjectFactory.obj
+.\Profiler\MatrixEffectorJogging.obj
+.\Profiler\MatrixEffectorLeveling.obj
+.\Profiler\anim.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+\Projects\Blitzkrieg\Sources\src\Formats\Profiler\Formats.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP2005.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalsLoader.cpp
+MeshAnimation.cpp
+SpriteAnimation.cpp
+AnimationManager.cpp
+AnimObjectFactory.cpp
+MatrixEffectorJogging.cpp
+MatrixEffectorLeveling.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/Anim.lib and object Profiler/Anim.exp
+<h3>
+--------------------Configuration: Input - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/Input.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\Input\Input.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP269D.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Input.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm400 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Input\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Input\InputAPI.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Input\InputBinder.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Input\InputObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Input\InputSlider.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Input\Visitors.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP269D.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP269E.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Input.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm400 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Input\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP269E.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP269F.tmp" with contents
+[
+winmm.lib dinput8.lib dxguid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/Input.pdb" /debug /machine:I386 /def:".\Input.def" /out:"Profiler/Input.dll" /implib:"Profiler/Input.lib" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\InputAPI.obj
+.\Profiler\InputBinder.obj
+.\Profiler\InputObjectFactory.obj
+.\Profiler\InputSlider.obj
+.\Profiler\Visitors.obj
+.\Profiler\Input.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP269F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+C:\SDK\DX81\DXF\DXSDK\INCLUDE\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+Compiling...
+GlobalsLoader.cpp
+InputAPI.cpp
+InputBinder.cpp
+InputObjectFactory.cpp
+InputSlider.cpp
+Visitors.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/Input.lib and object Profiler/Input.exp
+<h3>
+--------------------Configuration: SFX - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/SFX.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\SFX\SFX.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP2D57.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/SFX.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\SFX\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\SFX\SampleSounds.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\SFX\SoundsSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\SFX\StreamingSound.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\SFX\SoundEngine.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\SFX\SoundManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\SFX\SoundObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\SFX\StreamFadeOff.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP2D57.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP2D58.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/SFX.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\SFX\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP2D58.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP2D59.tmp" with contents
+[
+fmodvc.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib Winmm.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/SFX.pdb" /debug /machine:I386 /def:".\Sound.def" /out:"Profiler/SFX.dll" /implib:"Profiler/SFX.lib" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\SampleSounds.obj
+.\Profiler\SoundsSerialize.obj
+.\Profiler\StreamingSound.obj
+.\Profiler\SoundEngine.obj
+.\Profiler\SoundManager.obj
+.\Profiler\SoundObjectFactory.obj
+.\Profiler\StreamFadeOff.obj
+.\Profiler\SFX.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP2D59.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalsLoader.cpp
+SampleSounds.cpp
+SoundsSerialize.cpp
+StreamingSound.cpp
+SoundEngine.cpp
+SoundManager.cpp
+SoundObjectFactory.cpp
+StreamFadeOff.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/SFX.lib and object Profiler/SFX.exp
+<h3>
+--------------------Configuration: Scene - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/Scene.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\Scene\Scene.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP322C.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Scene.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm150 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Scene\FFMPEGVideoPlayer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SceneDraw.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SceneInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SceneObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\ScenePick.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\Icon.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\IconBar.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\IconHPBar.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\IconPic.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\IconText.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\BoldLineVisObj.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\EffectVisObj.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\FlashVisObj.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\MeshVisObj.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SpriteVisObj.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SquadVisObj.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\VisObjBuilder.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\StatSystem.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\Camera.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\Cursor.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\FrameSelection.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\AnimVisitor.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\DrawVisitor.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\MaterialEffector.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\MatrixEffector.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\CellsConglomerateContainer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SceneSound.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SoundScene.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SoundSceneSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\BinkVideoPlayer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\KeyBasedParticleSource.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\ParticleManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\ParticleSourceData.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SmokinParticleSource.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\SmokinParticleSourceData.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\Track.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\FastSinCos.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\Transition.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\MeshBuilders.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\RiverBuilder.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\TerrainBuilder.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\TerrainEditor.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\TerrainRoad.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\TerrainWater.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\VectorObject.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\TerraDraw.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\TerrainInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\TerraSound.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Scene\GammaEffect.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP322C.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP322D.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Scene.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm150 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Scene\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP322D.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP322E.tmp" with contents
+[
+winmm.lib avcodec.lib avformat.lib avutil.lib swscale.lib swresample.lib avdevice.lib avfilter.lib binkw32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/Scene.pdb" /debug /machine:I386 /def:".\Scene.def" /out:"Profiler/Scene.dll" /implib:"Profiler/Scene.lib" /pdbtype:sept /fixed:no 
+.\Profiler\FFMPEGVideoPlayer.obj
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\SceneDraw.obj
+.\Profiler\SceneInternal.obj
+.\Profiler\SceneObjectFactory.obj
+.\Profiler\ScenePick.obj
+.\Profiler\Icon.obj
+.\Profiler\IconBar.obj
+.\Profiler\IconHPBar.obj
+.\Profiler\IconPic.obj
+.\Profiler\IconText.obj
+.\Profiler\BoldLineVisObj.obj
+.\Profiler\EffectVisObj.obj
+.\Profiler\FlashVisObj.obj
+.\Profiler\MeshVisObj.obj
+.\Profiler\SpriteVisObj.obj
+.\Profiler\SquadVisObj.obj
+.\Profiler\VisObjBuilder.obj
+.\Profiler\StatSystem.obj
+.\Profiler\Camera.obj
+.\Profiler\Cursor.obj
+.\Profiler\FrameSelection.obj
+.\Profiler\AnimVisitor.obj
+.\Profiler\DrawVisitor.obj
+.\Profiler\MaterialEffector.obj
+.\Profiler\MatrixEffector.obj
+.\Profiler\CellsConglomerateContainer.obj
+.\Profiler\SceneSound.obj
+.\Profiler\SoundScene.obj
+.\Profiler\SoundSceneSerialize.obj
+.\Profiler\BinkVideoPlayer.obj
+.\Profiler\KeyBasedParticleSource.obj
+.\Profiler\ParticleManager.obj
+.\Profiler\ParticleSourceData.obj
+.\Profiler\SmokinParticleSource.obj
+.\Profiler\SmokinParticleSourceData.obj
+.\Profiler\Track.obj
+.\Profiler\FastSinCos.obj
+.\Profiler\Transition.obj
+.\Profiler\MeshBuilders.obj
+.\Profiler\RiverBuilder.obj
+.\Profiler\TerrainBuilder.obj
+.\Profiler\TerrainEditor.obj
+.\Profiler\TerrainRoad.obj
+.\Profiler\TerrainWater.obj
+.\Profiler\VectorObject.obj
+.\Profiler\TerraDraw.obj
+.\Profiler\TerrainInternal.obj
+.\Profiler\TerraSound.obj
+.\Profiler\GammaEffect.obj
+.\Profiler\Scene.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+\Projects\Blitzkrieg\Sources\src\Formats\Profiler\Formats.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP322E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+FFMPEGVideoPlayer.cpp
+GlobalsLoader.cpp
+SceneDraw.cpp
+SceneInternal.cpp
+SceneObjectFactory.cpp
+ScenePick.cpp
+Icon.cpp
+IconBar.cpp
+IconHPBar.cpp
+IconPic.cpp
+IconText.cpp
+BoldLineVisObj.cpp
+EffectVisObj.cpp
+FlashVisObj.cpp
+MeshVisObj.cpp
+SpriteVisObj.cpp
+SquadVisObj.cpp
+VisObjBuilder.cpp
+StatSystem.cpp
+Camera.cpp
+Generating Code...
+Compiling...
+Cursor.cpp
+FrameSelection.cpp
+AnimVisitor.cpp
+DrawVisitor.cpp
+MaterialEffector.cpp
+MatrixEffector.cpp
+CellsConglomerateContainer.cpp
+SceneSound.cpp
+SoundScene.cpp
+SoundSceneSerialize.cpp
+BinkVideoPlayer.cpp
+KeyBasedParticleSource.cpp
+ParticleManager.cpp
+ParticleSourceData.cpp
+SmokinParticleSource.cpp
+SmokinParticleSourceData.cpp
+Track.cpp
+FastSinCos.cpp
+Transition.cpp
+MeshBuilders.cpp
+Generating Code...
+Compiling...
+RiverBuilder.cpp
+TerrainBuilder.cpp
+TerrainEditor.cpp
+TerrainRoad.cpp
+TerrainWater.cpp
+VectorObject.cpp
+TerraDraw.cpp
+TerrainInternal.cpp
+TerraSound.cpp
+GammaEffect.cpp
+Generating Code...
+C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\VC98\STLPORT\stl/_algo.c(738) : warning C4715: '_STL::__unguarded_partition' : not all control paths return a value
+C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\VC98\STLPORT\stl/_algo.c(738) : warning C4715: '_STL::__unguarded_partition' : not all control paths return a value
+C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\VC98\STLPORT\stl/_algo.c(738) : warning C4715: '_STL::__unguarded_partition' : not all control paths return a value
+Linking...
+   Creating library Profiler/Scene.lib and object Profiler/Scene.exp
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP5A97.bat" with contents
+[
+@echo off
+%cd:~0,2%
+robocopy "Profiler/" "../Game/Profiler" "Scene.dll" /NFL /NDL /NJH /NJS /nc /ns /np
+exit /b 0
+]
+Creating command line "C:\Users\Adam\AppData\Local\Temp\RSP5A97.bat"
+
+
+<h3>
+--------------------Configuration: GFX - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/GFX.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\GFX\GFX.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP5F0D.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/GFX.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\GFX\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\GFXObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\GraphicsEngine.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\VideoCheck.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\Texture.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\TextureManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\GeometryBuffer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\GeometryManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\GeometryMesh.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\RangeAllocs.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\Clipping.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\Font.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\FontManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\GFXTextVisitors.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\Text.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GFX\Shader.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP5F0D.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP5F0E.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/GFX.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\GFX\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP5F0E.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP5F0F.tmp" with contents
+[
+d3d8.lib dxguid.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/GFX.pdb" /debug /machine:I386 /def:".\GFX.def" /out:"Profiler/GFX.dll" /implib:"Profiler/GFX.lib" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\GFXObjectFactory.obj
+.\Profiler\GraphicsEngine.obj
+.\Profiler\VideoCheck.obj
+.\Profiler\Texture.obj
+.\Profiler\TextureManager.obj
+.\Profiler\GeometryBuffer.obj
+.\Profiler\GeometryManager.obj
+.\Profiler\GeometryMesh.obj
+.\Profiler\RangeAllocs.obj
+.\Profiler\Clipping.obj
+.\Profiler\Font.obj
+.\Profiler\FontManager.obj
+.\Profiler\GFXTextVisitors.obj
+.\Profiler\Text.obj
+.\Profiler\Shader.obj
+.\Profiler\GFX.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+\Projects\Blitzkrieg\Sources\src\Formats\Profiler\Formats.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP5F0F.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalsLoader.cpp
+GFXObjectFactory.cpp
+GraphicsEngine.cpp
+VideoCheck.cpp
+Texture.cpp
+C:\SDK\DX81\DXF\DXSDK\INCLUDE\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+TextureManager.cpp
+GeometryBuffer.cpp
+GeometryManager.cpp
+GeometryMesh.cpp
+RangeAllocs.cpp
+Clipping.cpp
+Font.cpp
+FontManager.cpp
+GFXTextVisitors.cpp
+Text.cpp
+Shader.cpp
+Generating Code...
+warning C4786: '_STL::vector<_STL::vector<_STL::pair<unsigned long,unsigned long>,_STL::allocator<_STL::pair<unsigned long,unsigned long> > >,_STL::allocator<_STL::vector<_STL::pair<unsigned long,unsigned long>,_STL::allocator<_STL::pair<unsigned long,unsigned long> > > > >' : identifier was truncated to '255' characters in the debug information
+warning C4786: '_STL::_Vector_base<_STL::vector<_STL::pair<unsigned long,unsigned long>,_STL::allocator<_STL::pair<unsigned long,unsigned long> > >,_STL::allocator<_STL::vector<_STL::pair<unsigned long,unsigned long>,_STL::allocator<_STL::pair<unsigned long,unsigned long> > > > >' : identifier was truncated to '255' characters in the debug information
+warning C4786: '_STL::_STLP_alloc_proxy<_STL::vector<_STL::pair<unsigned long,unsigned long>,_STL::allocator<_STL::pair<unsigned long,unsigned long> > > *,_STL::vector<_STL::pair<unsigned long,unsigned long>,_STL::allocator<_STL::pair<unsigned long,unsigned long> > >,_STL::allocator<_STL::vector<_STL::pair<unsigned long,unsigned long>,_STL::allocator<_STL::pair<unsigned long,unsigned long> > > > >' : identifier was truncated to '255' characters in the debug information
+D:\Projects\Blitzkrieg\Sources\src\GFX\GraphicsEngine.cpp(242) : warning C4715: 'CGraphicsEngine::GetVideoCard' : not all control paths return a value
+Linking...
+   Creating library Profiler/GFX.lib and object Profiler/GFX.exp
+<h3>
+--------------------Configuration: GameSpy - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP6960.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\chat\chatCallbacks.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\chat\chatChannel.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\chat\chatCrypt.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\chat\chatHandlers.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\chat\chatMain.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\chat\chatSocket.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\darray.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\queryreporting\gqueryreporting.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\cengine\gserver.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\cengine\gserverlist.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\cengine\gutil.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\hashtable.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\md5c.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\nonport.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerCallbacks.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerCEngine.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerGlobalCallbacks.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerKeys.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerMain.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerMangle.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerOperations.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerPing.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerPlayers.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\peer\peerRooms.c"
+"D:\Projects\Blitzkrieg\Sources\src\GameSpy\pinger\pingerMain.c"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP6960.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP6961.tmp" with contents
+[
+/nologo /out:"Profiler\GameSpy.lib" 
+.\Profiler\chatCallbacks.obj
+.\Profiler\chatChannel.obj
+.\Profiler\chatCrypt.obj
+.\Profiler\chatHandlers.obj
+.\Profiler\chatMain.obj
+.\Profiler\chatSocket.obj
+.\Profiler\darray.obj
+.\Profiler\gqueryreporting.obj
+.\Profiler\gserver.obj
+.\Profiler\gserverlist.obj
+.\Profiler\gutil.obj
+.\Profiler\hashtable.obj
+.\Profiler\md5c.obj
+.\Profiler\nonport.obj
+.\Profiler\peerCallbacks.obj
+.\Profiler\peerCEngine.obj
+.\Profiler\peerGlobalCallbacks.obj
+.\Profiler\peerKeys.obj
+.\Profiler\peerMain.obj
+.\Profiler\peerMangle.obj
+.\Profiler\peerOperations.obj
+.\Profiler\peerPing.obj
+.\Profiler\peerPlayers.obj
+.\Profiler\peerRooms.obj
+.\Profiler\pingerMain.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP6961.tmp"
+<h3>Output Window</h3>
+Compiling...
+chatCallbacks.c
+chatChannel.c
+chatCrypt.c
+chatHandlers.c
+chatMain.c
+chatSocket.c
+darray.c
+gqueryreporting.c
+gserver.c
+gserverlist.c
+gutil.c
+hashtable.c
+md5c.c
+nonport.c
+peerCallbacks.c
+peerCEngine.c
+peerGlobalCallbacks.c
+peerKeys.c
+peerMain.c
+peerMangle.c
+Generating Code...
+Compiling...
+peerOperations.c
+peerPing.c
+peerPlayers.c
+peerRooms.c
+pingerMain.c
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: Net - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/net.res" /d "NDEBUG" "D:\Projects\Blitzkrieg\Sources\src\Net\net.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP6D1C.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Net.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\Net\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetA4.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetAcks.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetConnection.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetDriverConsts.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetLogin.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetLowest.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetPeer2Peer.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetServerInfo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetStream.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\NetObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\Streams.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\GSQueryReportingDriver.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Net\GSServersList.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP6D1C.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP6D1D.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Net.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /c 
+"D:\Projects\Blitzkrieg\Sources\src\Net\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP6D1D.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP6D1E.tmp" with contents
+[
+ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Profiler/Net.pdb" /debug /machine:I386 /def:".\net.def" /out:"Profiler/Net.dll" /implib:"Profiler/Net.lib" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\NetA4.obj
+.\Profiler\NetAcks.obj
+.\Profiler\NetConnection.obj
+.\Profiler\NetDriverConsts.obj
+.\Profiler\NetLogin.obj
+.\Profiler\NetLowest.obj
+.\Profiler\NetPeer2Peer.obj
+.\Profiler\NetServerInfo.obj
+.\Profiler\NetStream.obj
+.\Profiler\NetObjectFactory.obj
+.\Profiler\Streams.obj
+.\Profiler\GSQueryReportingDriver.obj
+.\Profiler\GSServersList.obj
+.\Profiler\net.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+\Projects\Blitzkrieg\Sources\src\GameSpy\Profiler\GameSpy.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP6D1E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalsLoader.cpp
+NetA4.cpp
+NetAcks.cpp
+NetConnection.cpp
+NetDriverConsts.cpp
+NetLogin.cpp
+NetLowest.cpp
+NetPeer2Peer.cpp
+NetServerInfo.cpp
+NetStream.cpp
+NetObjectFactory.cpp
+Streams.cpp
+GSQueryReportingDriver.cpp
+GSServersList.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/Net.lib and object Profiler/Net.exp
+<h3>
 --------------------Configuration: Main - Win32 Profiler--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP83E4.tmp" with contents
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP754C.tmp" with contents
 [
 /nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Main.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Main\iMainInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\MainLoopCommands.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\MainObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\RandomMapHelper.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\GameTimerInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\GameDB.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\GameStats.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\RPGStats.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\FilesInspector.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\InitGlobalVarConsts.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\Initialization.cpp"
 "D:\Projects\Blitzkrieg\Sources\src\Main\LoadDLLs.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\TextManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\TextObject.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\AILogicCommand.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\AILogicCommandInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\MultiPlayerTransceiver.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\SinglePlayerTransceiver.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\ChatMessages.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\GameCreationMessages.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\MessagesStore.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\ServersListMessages.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\assert.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\GameCreation.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\GamePlaying.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\GameSpyChat.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\GameSpyPeerChat.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\LanChat.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\MultiplayerInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\ServerInfo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\ServersList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\CommandsHistory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\PlayerScenarioInfo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\PlayerSkill.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\ScenarioStatistics.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\ScenarioTracker2Internal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\UserProfile.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Main\BetaKey.cpp"
 ]
-Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP83E4.tmp" 
-Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP83E5.tmp" with contents
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP754C.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP754D.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Main.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Main\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSP754D.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP754E.tmp" with contents
 [
 /nologo /out:"Profiler\Main.lib" 
 .\Profiler\StdAfx.obj
@@ -60,17 +2107,378 @@ Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP83E5.tmp" with cont
 \Projects\Blitzkrieg\Sources\src\zlib\Profiler\zlib.lib
 \Projects\Blitzkrieg\Sources\src\GameSpy\Profiler\GameSpy.lib
 ]
-Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP83E5.tmp"
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSP754E.tmp"
 <h3>Output Window</h3>
 Compiling...
+StdAfx.cpp
+Compiling...
+iMainInternal.cpp
+MainLoopCommands.cpp
+MainObjectFactory.cpp
+RandomMapHelper.cpp
+GameTimerInternal.cpp
+GameDB.cpp
+GameStats.cpp
+RPGStats.cpp
+FilesInspector.cpp
+InitGlobalVarConsts.cpp
+Initialization.cpp
 LoadDLLs.cpp
+TextManager.cpp
+TextObject.cpp
+AILogicCommand.cpp
+AILogicCommandInternal.cpp
+MultiPlayerTransceiver.cpp
+SinglePlayerTransceiver.cpp
+ChatMessages.cpp
+GameCreationMessages.cpp
+Generating Code...
+Compiling...
+MessagesStore.cpp
+ServersListMessages.cpp
+assert.cpp
+GameCreation.cpp
+GamePlaying.cpp
+GameSpyChat.cpp
+GameSpyPeerChat.cpp
+LanChat.cpp
+MultiplayerInternal.cpp
+ServerInfo.cpp
+ServersList.cpp
+CommandsHistory.cpp
+PlayerScenarioInfo.cpp
+PlayerSkill.cpp
+ScenarioStatistics.cpp
+ScenarioTracker2Internal.cpp
+UserProfile.cpp
+BetaKey.cpp
+Generating Code...
 Creating library...
 Scene.lib(Scene.dll) : warning LNK4006: __NULL_IMPORT_DESCRIPTOR already defined in BugSlay.lib(BugSlay.dll); second definition ignored
+<h3>
+--------------------Configuration: Common - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPA1FD.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Common.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Common\MapObject.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\MOBridge.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\MOBuilding.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\MOEntrenchment.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\MOObject.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\MOProjectile.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\MOSquad.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\MOUnit.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\MOUnitInfantry.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\MOUnitMechanical.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\Passangers.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\UISquadElement.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\WorldBase.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Common\InterfaceScreenBase.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPA1FD.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPA1FE.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/Common.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Common\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPA1FE.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPA1FF.tmp" with contents
+[
+/nologo /out:"Profiler\Common.lib" 
+.\Profiler\StdAfx.obj
+.\Profiler\MapObject.obj
+.\Profiler\MOBridge.obj
+.\Profiler\MOBuilding.obj
+.\Profiler\MOEntrenchment.obj
+.\Profiler\MOObject.obj
+.\Profiler\MOProjectile.obj
+.\Profiler\MOSquad.obj
+.\Profiler\MOUnit.obj
+.\Profiler\MOUnitInfantry.obj
+.\Profiler\MOUnitMechanical.obj
+.\Profiler\Passangers.obj
+.\Profiler\UISquadElement.obj
+.\Profiler\WorldBase.obj
+.\Profiler\InterfaceScreenBase.obj
+]
+Creating command line "link.exe -lib @C:\Users\Adam\AppData\Local\Temp\RSPA1FF.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+MapObject.cpp
+MOBridge.cpp
+MOBuilding.cpp
+MOEntrenchment.cpp
+MOObject.cpp
+MOProjectile.cpp
+MOSquad.cpp
+MOUnit.cpp
+MOUnitInfantry.cpp
+MOUnitMechanical.cpp
+Passangers.cpp
+UISquadElement.cpp
+WorldBase.cpp
+InterfaceScreenBase.cpp
+Generating Code...
+Creating library...
+<h3>
+--------------------Configuration: GameTT - Win32 Profiler--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x419 /fo"Profiler/GameTT.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\GameTT\GameTT.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPAFBB.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/GameTT.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\WorldClient.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\WorldClientActions.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MultiplayerGamesList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MultiplayerStartingGame.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceMPChat.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\ChatWrapper.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceMPCreateGame.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceMPMapSettings.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceMPAddressBook.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MPConnectionError.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MultiplayerCommandManagerInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\PlayersInterface.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceOptionsSettings.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\OptionEntryWrapper.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceAfterMissionPopups.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceUnitPerformance.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceSwitchModeTo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceNewDepotUpgrades.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\AddUnitToMission.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\Campaign.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\Chapter.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\Common.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\encyclopedia.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterMission.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MainMenu.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\Mission.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\SingleMedal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\Stats.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\TotalEncyclopedia.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\UIState.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\UnitsPool.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\UpgradeUnit.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\iMissionInternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\QuitMission.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\PlayMovieInterface.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceStartDialog.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MapSettingsWrapper.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\BaseList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\CustomCampaign.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\CustomChapter.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\CustomList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\CustomMission.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\CutsceneList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\IMLoadMission.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\IMSaveMission.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\IMTutorial.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceIMModsList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\LoadMission.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\PlayerGainLevel.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\ReplayList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\SaveMission.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\SaveReplay.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\SwitchToNextChapter.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\TutorialList.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\InterfaceMessageBox.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\UIConsts.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\UIMapInfo.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\CustomMessageReaction.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MessageReactionINternal.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MessageReactionSerialize.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MissionObjectFactory.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\AckManager.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\MinimapCreation.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPAFBB.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPAFBC.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /D "_PROFILER" /Fp"Profiler/GameTT.pch" /Yc"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm200 /c 
+"D:\Projects\Blitzkrieg\Sources\src\GameTT\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPAFBC.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPAFBD.tmp" with contents
+[
+vtuneapi.lib version.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Profiler/GameTT.pdb" /debug /machine:I386 /def:".\GameTT.def" /out:"Profiler/GameTT.dll" /implib:"Profiler/GameTT.lib" /pdbtype:sept /fixed:no 
+.\Profiler\GlobalsLoader.obj
+.\Profiler\StdAfx.obj
+.\Profiler\WorldClient.obj
+.\Profiler\WorldClientActions.obj
+.\Profiler\MultiplayerGamesList.obj
+.\Profiler\MultiplayerStartingGame.obj
+.\Profiler\InterfaceMPChat.obj
+.\Profiler\ChatWrapper.obj
+.\Profiler\InterfaceMPCreateGame.obj
+.\Profiler\InterfaceMPMapSettings.obj
+.\Profiler\InterfaceMPAddressBook.obj
+.\Profiler\MPConnectionError.obj
+.\Profiler\MultiplayerCommandManagerInternal.obj
+.\Profiler\PlayersInterface.obj
+.\Profiler\InterfaceOptionsSettings.obj
+.\Profiler\OptionEntryWrapper.obj
+.\Profiler\InterfaceAfterMissionPopups.obj
+.\Profiler\InterfaceUnitPerformance.obj
+.\Profiler\InterfaceSwitchModeTo.obj
+.\Profiler\InterfaceNewDepotUpgrades.obj
+.\Profiler\AddUnitToMission.obj
+.\Profiler\Campaign.obj
+.\Profiler\Chapter.obj
+.\Profiler\Common.obj
+.\Profiler\encyclopedia.obj
+.\Profiler\InterMission.obj
+.\Profiler\MainMenu.obj
+.\Profiler\Mission.obj
+.\Profiler\SingleMedal.obj
+.\Profiler\Stats.obj
+.\Profiler\TotalEncyclopedia.obj
+.\Profiler\UIState.obj
+.\Profiler\UnitsPool.obj
+.\Profiler\UpgradeUnit.obj
+.\Profiler\iMissionInternal.obj
+.\Profiler\QuitMission.obj
+.\Profiler\PlayMovieInterface.obj
+.\Profiler\InterfaceStartDialog.obj
+.\Profiler\MapSettingsWrapper.obj
+.\Profiler\BaseList.obj
+.\Profiler\CustomCampaign.obj
+.\Profiler\CustomChapter.obj
+.\Profiler\CustomList.obj
+.\Profiler\CustomMission.obj
+.\Profiler\CutsceneList.obj
+.\Profiler\IMLoadMission.obj
+.\Profiler\IMSaveMission.obj
+.\Profiler\IMTutorial.obj
+.\Profiler\InterfaceIMModsList.obj
+.\Profiler\LoadMission.obj
+.\Profiler\PlayerGainLevel.obj
+.\Profiler\ReplayList.obj
+.\Profiler\SaveMission.obj
+.\Profiler\SaveReplay.obj
+.\Profiler\SwitchToNextChapter.obj
+.\Profiler\TutorialList.obj
+.\Profiler\InterfaceMessageBox.obj
+.\Profiler\UIConsts.obj
+.\Profiler\UIMapInfo.obj
+.\Profiler\CustomMessageReaction.obj
+.\Profiler\MessageReactionINternal.obj
+.\Profiler\MessageReactionSerialize.obj
+.\Profiler\MissionObjectFactory.obj
+.\Profiler\AckManager.obj
+.\Profiler\MinimapCreation.obj
+.\Profiler\GameTT.res
+\Projects\Blitzkrieg\Sources\src\BugSlay\Profiler\BugSlay.lib
+\Projects\Blitzkrieg\Sources\src\Misc\Profiler\Misc.lib
+\Projects\Blitzkrieg\Sources\src\Common\Profiler\Common.lib
+\Projects\Blitzkrieg\Sources\src\Formats\Profiler\Formats.lib
+\Projects\Blitzkrieg\Sources\src\RandomMapGen\Profiler\RandomMapGen.lib
+]
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSPAFBD.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalsLoader.cpp
+WorldClient.cpp
+WorldClientActions.cpp
+MultiplayerGamesList.cpp
+MultiplayerStartingGame.cpp
+InterfaceMPChat.cpp
+ChatWrapper.cpp
+InterfaceMPCreateGame.cpp
+InterfaceMPMapSettings.cpp
+InterfaceMPAddressBook.cpp
+MPConnectionError.cpp
+MultiplayerCommandManagerInternal.cpp
+PlayersInterface.cpp
+InterfaceOptionsSettings.cpp
+OptionEntryWrapper.cpp
+InterfaceAfterMissionPopups.cpp
+InterfaceUnitPerformance.cpp
+InterfaceSwitchModeTo.cpp
+InterfaceNewDepotUpgrades.cpp
+AddUnitToMission.cpp
+Generating Code...
+Compiling...
+Campaign.cpp
+Chapter.cpp
+Common.cpp
+encyclopedia.cpp
+InterMission.cpp
+MainMenu.cpp
+Mission.cpp
+SingleMedal.cpp
+Stats.cpp
+TotalEncyclopedia.cpp
+UIState.cpp
+UnitsPool.cpp
+UpgradeUnit.cpp
+iMissionInternal.cpp
+QuitMission.cpp
+PlayMovieInterface.cpp
+InterfaceStartDialog.cpp
+MapSettingsWrapper.cpp
+BaseList.cpp
+CustomCampaign.cpp
+Generating Code...
+Compiling...
+CustomChapter.cpp
+CustomList.cpp
+CustomMission.cpp
+CutsceneList.cpp
+IMLoadMission.cpp
+IMSaveMission.cpp
+IMTutorial.cpp
+InterfaceIMModsList.cpp
+LoadMission.cpp
+PlayerGainLevel.cpp
+ReplayList.cpp
+SaveMission.cpp
+SaveReplay.cpp
+SwitchToNextChapter.cpp
+TutorialList.cpp
+InterfaceMessageBox.cpp
+UIConsts.cpp
+UIMapInfo.cpp
+CustomMessageReaction.cpp
+MessageReactionINternal.cpp
+Generating Code...
+Compiling...
+MessageReactionSerialize.cpp
+MissionObjectFactory.cpp
+AckManager.cpp
+MinimapCreation.cpp
+Generating Code...
+Linking...
+   Creating library Profiler/GameTT.lib and object Profiler/GameTT.exp
 <h3>
 --------------------Configuration: Game - Win32 Profiler--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSP8713.tmp" with contents
+Creating command line "rc.exe /l 0x419 /fo"Profiler/Game.res" /d "_DEBUG" "D:\Projects\Blitzkrieg\Sources\src\Game\Game.rc"" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPF8BE.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "_PROFILER" /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /Fp"Profiler/Game.pch" /Yu"StdAfx.h" /Fo"Profiler/" /Fd"Profiler/" /FD /Zm150 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Game\GlobalsLoader.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Game\main.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Game\SysKeys.cpp"
+"D:\Projects\Blitzkrieg\Sources\src\Game\WinFrame.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPF8BE.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPF8BF.tmp" with contents
+[
+/nologo /MD /W3 /GR /GX /Zi /O2 /D "_PROFILER" /D "NDEBUG" /D "_WINDOWS" /D "WIN32" /D "_FINALRELEASE" /Fp"Profiler/Game.pch" /Yc /Fo"Profiler/" /Fd"Profiler/" /FD /Zm150 /c 
+"D:\Projects\Blitzkrieg\Sources\src\Game\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\Adam\AppData\Local\Temp\RSPF8BF.tmp" 
+Creating temporary file "C:\Users\Adam\AppData\Local\Temp\RSPF8C0.tmp" with contents
 [
 vtuneapi.lib d3dx8.lib version.lib winmm.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib comsupp.lib /nologo /subsystem:windows /incremental:no /pdb:"Profiler/Game.pdb" /debug /machine:I386 /out:"Profiler/Game.exe" /pdbtype:sept /fixed:no 
 .\Profiler\GlobalsLoader.obj
@@ -86,14 +2494,23 @@ vtuneapi.lib d3dx8.lib version.lib winmm.lib kernel32.lib user32.lib gdi32.lib w
 \Projects\Blitzkrieg\Sources\src\Formats\Profiler\Formats.lib
 \Projects\Blitzkrieg\Sources\src\LuaLib\Profiler\LuaLib.lib
 ]
-Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSP8713.tmp"
+Creating command line "link.exe @C:\Users\Adam\AppData\Local\Temp\RSPF8C0.tmp"
 <h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+GlobalsLoader.cpp
+main.cpp
+SysKeys.cpp
+WinFrame.cpp
+Generating Code...
 Linking...
 
 
 
 <h3>Results</h3>
-Game.exe - 0 error(s), 1 warning(s)
+Game.exe - 0 error(s), 12 warning(s)
 </pre>
 </body>
 </html>

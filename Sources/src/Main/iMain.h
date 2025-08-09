@@ -25,7 +25,7 @@ interface IInterfaceBase : public IInterfaceObject
 	virtual bool STDCALL Init() = 0;
 	virtual void STDCALL Done() = 0;
 	virtual void STDCALL OnGetFocus( bool bFocus ) = 0;
-	// переход к этому интерфейсу из другого полноэкранного
+	// пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	virtual void STDCALL StartInterface() = 0;
 };
 interface IInterfaceCommand : public IRefCount
@@ -131,6 +131,8 @@ namespace NMain
 	const std::string GetModuleFileNameByDesc( const SModuleDescriptor *pModule );
 	bool SetGameDirectory();
 	bool CheckBetaKey();
+	void PrintLoadedModules();
+	void PreLoadModules();
 };
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 IMainLoop* STDCALL CreateMainLoop();

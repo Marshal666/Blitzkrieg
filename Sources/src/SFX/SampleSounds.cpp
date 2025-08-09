@@ -23,8 +23,8 @@ void CSoundSample::SwapData( ISharedResource *pResource )
 void CSoundSample::SetLoop( bool bEnable ) 
 { 
 	bLooped = bEnable; 
-	if ( sample )
-		FSOUND_Sample_SetLoopMode( sample, bEnable ? FSOUND_LOOP_NORMAL : FSOUND_LOOP_OFF ); 
+	// if ( sample )
+	// 	FSOUND_Sample_SetLoopMode( sample, bEnable ? FSOUND_LOOP_NORMAL : FSOUND_LOOP_OFF ); 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 bool CSoundSample::Load( const bool bPreLoad )
@@ -73,10 +73,10 @@ void CSound3D::SetPosition( const CVec3 &vPos3 )
 	if ( IsPlaying() )
 	{
 		if ( !bDopplerFlag )
-			FSOUND_3D_SetAttributes( GetChannel(), (float *) vLocalPos.m, 0 );			//0 потому что мы не используем доплеровский эффект
+			FSOUND_3D_SetAttributes( GetChannel(), (float *) vLocalPos.m, 0 );			//0 пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
 		else
 		{
-			// вычислим скорость
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			/*
 			NTimer::STime time = GetSingleton<IGameTimer>()->GetGameTime();
 			float fSpeed = sqrt( (vPos3.x-vLastPos.x)*(vPos3.x-vLastPos.x) + (vPos3.y-vLastPos.y)*(vPos3.y-vLastPos.y) + (vPos3.z-vLastPos.z)*(vPos3.z-vLastPos.z) );

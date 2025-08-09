@@ -1,0 +1,53 @@
+# Compiled binary files
+**/*.exe
+**/*.dll
+**/*.lib
+**/*.obj
+**/*.o
+**/*.so
+**/*.a
+**/*.out
+**/*.pdb
+**/*.idb
+**/*.ilk
+
+# Generated resources
+**/*.res
+**/*.pch
+**/*.tlb
+**/*.tli
+**/*.tlh
+
+# Build configuration folders
+**/[Oo]bj/
+**/[Bb]in/
+**/Debug/
+**/Release/
+**/Profiler/
+**/Build/
+**/FastDebug/
+**/BetaRelease/
+
+# Any other case variations or suffixes
+**/debug/
+**/release/
+**/build/
+**/profiler/
+**/fastdebug/
+**/betarelease/
+
+# Temporary files
+**/*.tmp
+**/*.log
+**/*.suo
+**/*.ncb
+**/*.aps
+**/*.user
+**/*.opt
+**/*.plg
+
+# Backup files
+*~
+**/*.bak
+**/*.old
+**/*.orig
