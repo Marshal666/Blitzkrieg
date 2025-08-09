@@ -9,9 +9,12 @@ In 2025, the game's singleplayer source code was released under a [special licen
 Please review the terms of the [license agreement](LICENSE.md) carefully before using it.
 
 # Done changes
-Changes were mostly done so that the project can compile in Visual C++ 6.0 on Windows 10
-Removed all post-link CMD commands from projects - they didn't work on Windows 10
-Changed a few headers, predominantly SFX - "ported" to FMOD 3.75 - it seems to work
+- Changes were mostly done so that the project can compile in Visual C++ 6.0 on Windows 10
+- Removed all post-link CMD commands from projects - they didn't work on Windows 10
+- Changed a few headers, predominantly SFX - "ported" to FMOD 3.75 - it seems to work
+- Added FFMPEG video player (replacing BINK) - older 0.10.1 version, it supports bink, as well as some modern formats like MP4 or WEBM, x264 codec
+- Some additional cleanups were made too
+- I don't plan on working on this anymore tbh, I'll wait for Blitzkrieg 2 source code since I love that game a lot
 
 # What is in this repository
 - `Data` - game data
