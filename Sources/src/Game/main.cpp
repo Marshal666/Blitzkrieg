@@ -28,6 +28,8 @@
 
 #include "..\GameTT\CutScenesHelper.h"
 #include "..\Misc\TimeMeter.h"
+
+#include <windows.h>
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 float Clamp1( float fVal, float fMin, float fMax )
 {
@@ -76,6 +78,12 @@ struct SCmdParams
 void ProcessCommandLine( LPSTR lpCmdLine, SCmdParams *pCmdParams );
 void ReadAndSetSunlight( CTableAccessor &table, const std::string &szSeason );
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+void AttachConsoleOutput() {
+    AllocConsole();
+	freopen("CONOUT$", "w", stdout);
+	freopen("CONOUT$", "w", stderr);
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 static std::string szLaunchDirectory;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 int APIENTRY WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow )
@@ -91,6 +99,8 @@ int APIENTRY WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdL
 	//
 	_CrtSetDbgFlag( _CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF );
 	_CrtSetReportMode( _CRT_ERROR, _CRTDBG_MODE_DEBUG );
+
+	AttachConsoleOutput();
 	
 	int nLeakId = -1;
 	_CrtSetBreakAlloc( nLeakId );
@@ -148,7 +158,7 @@ int APIENTRY WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdL
 			NStr::ToLower( szDataDir );
 			if ( szDataDir == "s:\\versions\\current" )
 			{
-				::MessageBox( 0, "Сказано же, что нельзя использовать ресурсы с \"s:\\versions\\current\"!", "ERROR", MB_OK | MB_ICONEXCLAMATION );
+				::MessageBox( 0, "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ, пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ \"s:\\versions\\current\"!", "ERROR", MB_OK | MB_ICONEXCLAMATION );
 				return 0xDEAD;
 			}
 			else
@@ -347,7 +357,7 @@ int APIENTRY WinMain( HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdL
 			}
 		}
 	}
-	// всё через жопу
+	// пїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
 	{
 		std::string szGameSpyServer = GetGlobalVar( "Options.Multiplayer.GameSpyServerName", "" );
 		if ( !szGameSpyServer.empty() )
