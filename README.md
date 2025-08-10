@@ -28,27 +28,31 @@ All libraries from the SDK directory are needed for compilation. The paths to th
 
 ## Include
 ```
+C:\SDK\DX81\DXF\DXSDK\INCLUDE
+C:\SDK\FMOD\INCLUDE (not included in the repository)
 C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT
 C:\SDK\BINK (not included in the repository)
-C:\SDK\FMOD\API\INC (not included in the repository)
 C:\SDK\S3TC
-C:\SDK\STINGRAY STUDIO 2002\INCLUDE\TOOLKIT (not included in the repository)
-C:\SDK\STINGRAY STUDIO 2002\INCLUDE (not included in the repository)
-C:\SDK\STINGRAY STUDIO 2002\REGEX\INCLUDE (not included in the repository)
 C:\SDK\Maya4.0\include
+C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\VC98\INCLUDE
+C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\VC98\MFC\INCLUDE
+C:\SDK\VTUNEAPI
+C:\SDK\FFMPEG\INCLUDE
 ```
 
 ## Lib
 ```
-C:\SDK\BINK (not included in the repository)
-C:\SDK\FMOD\API\LIB (not included in the repository)
+C:\SDK\DX81\DXF\DXSDK\LIB (not included in the repository)
+C:\Program Files (x86)\Microsoft Visual Studio\VC98\LIB
+C:\Program Files (x86)\Microsoft Visual Studio\VC98\MFC\LIB
+C:\SDK\MSXML
+C:\SDK\MAYA4.0\LIB
 C:\SDK\S3TC
-C:\SDK\STINGRAY STUDIO 2002\LIB (not included in the repository)
-C:\SDK\STINGRAY STUDIO 2002\REGEX\LIB (not included in the repository)
-C:\SDK\Maya4.0\lib
+C:\SDK\VTUNEAPI
+C:\SDK\FMOD\LIB
+C:\SDK\BINK
+C:\SDK\FFMPEG\LIB
 ```
-
-In addition, **DirectX 8.1** or higher is required (it will automatically be added to the paths).
 
 ### Important Notes
 
