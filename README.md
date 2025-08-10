@@ -58,7 +58,6 @@ C:\SDK\FFMPEG\LIB
 
 - **Bink, FMOD, Stingray** libraries are not included in this repository as they require separate licensing.
 - **stlport** *must* be located in the Visual C directory, alongside `include`.
-- The path `C:\PROGRAM FILES\MICROSOFT VISUAL STUDIO\VC98\STLPORT` must be **first**, otherwise, the build will fail.
 
 ---
 
